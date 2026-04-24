@@ -39,22 +39,20 @@ header{
   position:relative;
   overflow:hidden;
   color:white;
-  padding:112px 22px 104px;
+  padding:92px 22px 86px;
   background:
-    linear-gradient(90deg,rgba(6,24,39,.92),rgba(6,24,39,.72) 48%,rgba(6,24,39,.52)),
-    url('banner.png');
-  background-size:cover;
-  background-position:center center;
-  background-attachment:fixed;
+    linear-gradient(135deg,rgba(6,24,39,.95),rgba(11,37,69,.94) 46%,rgba(15,118,110,.90)),
+    radial-gradient(circle at top right,rgba(246,196,83,.32),transparent 30%);
 }
 header:before{
   content:"";
   position:absolute;
   inset:0;
-  background:
-    radial-gradient(circle at 18% 35%,rgba(245,158,11,.22),transparent 24%),
-    linear-gradient(180deg,rgba(6,24,39,.12),rgba(6,24,39,.55));
-  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:42px 42px;
+  opacity:.35;
 }
 .hero{
   position:relative;
@@ -66,8 +64,8 @@ header:before{
   flex-wrap:wrap;
 }
 .profile-img{
-  width:218px;
-  height:218px;
+  width:260px;
+  height:260px;
   border-radius:50%;
   object-fit:cover;
   border:8px solid rgba(255,255,255,.95);
@@ -77,12 +75,6 @@ header:before{
 .hero-text{
   flex:1;
   min-width:310px;
-  background:rgba(6,24,39,.46);
-  border:1px solid rgba(255,255,255,.18);
-  border-radius:28px;
-  padding:30px;
-  backdrop-filter:blur(10px);
-  box-shadow:0 24px 60px rgba(0,0,0,.26);
 }
 .hero-text h1{
   font-size:54px;
@@ -264,7 +256,7 @@ footer{
   padding:30px;
 }
 @media(max-width:760px){
-  header{padding:66px 18px;background-attachment:scroll;background-position:center top}
+  header{padding:66px 18px}
   .hero{text-align:center;justify-content:center}
   .profile-img{width:210px;height:210px}
   .hero-text h1{font-size:38px}
@@ -274,73 +266,12 @@ footer{
   h2{font-size:28px}
   table{font-size:14px}
 }
-
-
-.coauthor-wrap{
-  position:relative;
-  background:
-    radial-gradient(circle at 20% 15%,rgba(20,184,166,.13),transparent 28%),
-    radial-gradient(circle at 82% 20%,rgba(245,158,11,.15),transparent 25%),
-    linear-gradient(135deg,#ffffff,#f8fafc);
-  border-radius:28px;
-  padding:30px;
-  box-shadow:0 22px 60px rgba(15,23,42,.14);
-  border:1px solid rgba(219,228,239,.95);
-  overflow:hidden;
-}
-.coauthor-wrap:before{
-  content:"";
-  position:absolute;
-  width:360px;
-  height:360px;
-  right:-160px;
-  top:-160px;
-  border-radius:50%;
-  background:rgba(15,118,110,.11);
-  animation:floatOrb 9s ease-in-out infinite alternate;
-}
-.coauthor-wrap:after{
-  content:"";
-  position:absolute;
-  width:260px;
-  height:260px;
-  left:-120px;
-  bottom:-120px;
-  border-radius:50%;
-  background:rgba(245,158,11,.12);
-  animation:floatOrb 11s ease-in-out infinite alternate-reverse;
-}
-@keyframes floatOrb{
-  from{transform:translate(0,0) scale(1)}
-  to{transform:translate(-28px,24px) scale(1.08)}
-}
-#coauthorNetwork{
-  position:relative;
-  z-index:2;
-  width:100%;
-  height:660px;
-  border-radius:24px;
-  background:
-    radial-gradient(circle at center,rgba(15,118,110,.08),transparent 34%),
-    linear-gradient(180deg,#ffffff,#f1f5f9);
-  border:1px solid #dbe4ef;
-  box-shadow:inset 0 0 45px rgba(15,23,42,.05);
-}
-.network-note{
-  position:relative;
-  z-index:2;
-  color:var(--muted);
-  margin-top:16px;
-  font-size:15px;
-}
-
-
 </style>
 
 </head>
 <body>
-<header><div class="hero"><img src="profile.jpg" alt="Dr. Muhammad Asad Zaighum" class="profile-img"><div class="hero-text"><h1>Dr. Muhammad Asad Zaighum</h1><h2>Mathematician | Researcher | Associate Professor</h2><p>My research lies at the intersection of harmonic analysis and functional analysis, with a particular focus on analysis associated with non-standard function spaces. I bring nearly a decade of university-level teaching experience, an active research career, graduate supervision, and academic leadership experience.</p><div class="badges"><span class="badge">Non-Standard Function Spaces</span><span class="badge">Harmonic Analysis</span><span class="badge">Functional Analysis</span><span class="badge">Function Spaces</span></div><a class="btn" href="#publications">View Publications</a><a class="btn btn-outline" href="#contact">Contact Me</a></div></div></header>
-<nav><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#metrics">Metrics</a><a href="#publications">Publications</a><a href="#coauthors">Co-authors</a><a href="#contact">Contact</a></nav>
+<header><div class="hero"><img src="profile.jpg" alt="Dr. Muhammad Asad Zaighum" class="profile-img"><div class="hero-text"><h1>Dr. Muhammad Asad Zaighum</h1><h2>Mathematician | Researcher | Associate Professor</h2><p>My research lies at the intersection of harmonic analysis and functional analysis, with a particular focus on analysis associated with non-standard function spaces. I bring nearly a decade of university-level teaching experience, an active research career, graduate supervision, and academic leadership experience.</p><div class="badges"><span class="badge">Non-Standard Function Spaces</span><span class="badge">Harmonic Analysis</span><span class="badge">Functional Analysis</span><span class="badge">Function Spaces</span></div><a class="btn" href="#publications">View Publications</a><a class="btn" href="CV_M_A_Zaighum.pdf" target="_blank">Download CV</a><a class="btn btn-outline" href="#contact">Contact Me</a></div></div></header>
+<nav><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#metrics">Metrics</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
 <section id="academic-identity" class="section-light">
   <h2>Academic Identity</h2>
   <div class="grid">
@@ -356,7 +287,7 @@ footer{
 <section id="metrics" class="section-light"><h2>Research Metrics</h2><div class="grid"><div class="card metric-card"><h3>Scopus Indexed Articles</h3><div class="metric-number">34</div></div><div class="card metric-card"><h3>WoS Indexed Articles</h3><div class="metric-number">31</div></div><div class="card metric-card"><h3>Scopus h-index</h3><div class="metric-number">11</div></div><div class="card metric-card"><h3>WoS h-index</h3><div class="metric-number">10</div></div></div><p><em>Updated April 2026</em></p></section>
 <section id="education"><h2>Academic Qualifications</h2><div class="job"><h3>Ph.D. in Mathematics</h3><p class="date">2009 – 2014</p><p>Abdus Salam School of Mathematical Sciences, Government College University Lahore, Lahore, Pakistan.</p><p><strong>Dissertation:</strong> Kernel Operators in Some New Function Spaces</p><p><strong>Advisor:</strong> <a href="https://www.kiu.edu.ge/?m=316" target="_blank">Professor Alexander Meskhi</a></p></div><div class="job"><h3>BS Mathematics</h3><p class="date">2005 – 2009</p><p>COMSATS Institute of Information and Technology, Islamabad, Pakistan.</p><p><strong>Project:</strong> Perturbation Methods in Physiological Flows</p><p><strong>Advisor:</strong> <a href="https://www.paspk.org/fellow-profile/?fellowID=16" target="_blank">Professor Saleem Asghar</a></p></div></section>
 <section id="experience" class="section-light"><h2>Professional Experience</h2><div class="job"><h3><a href="https://zhubanov.edu.kz/en/campus_hw/category/4/" target="_blank">Heriot-Watt International Faculty, K. Zhubanov Aktobe Regional University</a></h3><p class="date">Associate Professor | December 2025 – Present | Aktobe, Kazakhstan</p><p>Teaching mathematics at Global College, Heriot-Watt University, foundation-level Mathematics course (SCQF Level 7).</p></div><div class="job"><h3><a href="https://nu.edu.kz" target="_blank">Nazarbayev University</a></h3><p class="date">Postdoctoral Research Assistant | August 2024 – December 2025 | Astana, Kazakhstan</p><p>Conducting research under the project “Qualitative analysis for nonlocal and fractional models.”</p></div><div class="job"><h3><a href="https://riphah.edu.pk" target="_blank">Riphah International University</a></h3><p class="date">Head of Department, Mathematics and Statistics | September 2020 – On Leave Since August 2024 | Islamabad, Pakistan</p><p>Overseeing departmental operations, curriculum development, academic programs, and faculty coordination.</p></div><div class="job"><h3><a href="https://riphah.edu.pk/faculty/profile/?id=737" target="_blank">Riphah International University Faculty Profile</a></h3><p class="date">Associate Professor, Mathematics and Statistics | September 2018 – On Leave Since August 2024 | Islamabad, Pakistan</p><p>Teaching undergraduate and postgraduate students and supervising Ph.D. and M.Phil. students in mathematics.</p></div><div class="job"><h3><a href="https://www.javeriana.edu.co/inicio" target="_blank">Pontificia Universidad Javeriana</a></h3><p class="date">Postdoctoral Investigator | May 2015 – February 2016 | Bogota, Colombia</p><p>Conducted research with Professor Humberto Rafeiro on boundedness of operators in generalized Morrey spaces.</p></div><div class="job"><h3><a href="https://riphah.edu.pk" target="_blank">Riphah International University</a></h3><p class="date">Assistant Professor, Mathematics and Statistics | April 2014 – August 2018 | Islamabad, Pakistan</p><p>Developed and taught undergraduate and graduate mathematics courses and supervised student research projects.</p></div></section>
-
+<section id="honors"><h2>Honors and Awards</h2><div class="award"><strong>Research Performance Prize</strong>, Abdus Salam School of Mathematical Sciences, GCU Lahore, November 2013.</div><div class="award"><strong>First Prize, Young Speaker</strong>, 6th World Conference on 21st Century Mathematics, March 2013.</div><div class="award"><strong>Award for Commendable Performance</strong>, Abdus Salam School of Mathematical Sciences, November 2010.</div><div class="award"><strong>Chancellor’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</div><div class="award"><strong>Institute’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</div></section>
 
 <section id="publications"><h2>Publications</h2><p>Titles are linked to their article pages or DOI records where available. Impact factor and database labels have been omitted for a cleaner academic presentation.</p>
 <div class="publication"><strong>[J.1] Orazbayev, A., &amp; Zaighum, M. A. (2025).</strong> <a href="https://www.degruyterbrill.com/document/doi/10.1515/gmj-2026-2017/html" target="_blank"><strong>Generalized potential operators in weighted grand Herz spaces</strong></a>. <em>Georgian Mathematical Journal</em>.</div>
@@ -393,128 +324,7 @@ footer{
 <div class="publication"><strong>[J.31] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2013).</strong> <a href="https://doi.org/10.1186/1029-242X-2013-173" target="_blank"><strong>Weighted kernel operators in variable exponent amalgam spaces</strong></a>. <em>Journal of Inequalities and Applications</em>, 2013, 173.</div>
 <div class="publication"><strong>[J.32] Meskhi, A., &amp; Zaighum, M. A. (2012).</strong> <a href="https://doi.org/10.1515/gmj-2012-0020" target="_blank"><strong>On the boundedness of product kernel operators with measures</strong></a>. <em>Georgian Mathematical Journal</em>, 19(3), 533–557.</div>
 </section>
-
-
-
-
-<section id="coauthors" class="section-light">
-  <h2>Co-author Network</h2>
-  <div class="coauthor-wrap">
-    <div id="coauthorNetwork"></div>
-    <p class="network-note">
-      Animated collaboration map highlighting selected recurring co-authors. Drag nodes, zoom, and hover over links to explore collaboration strength.
-    </p>
-  </div>
-</section>
-
-<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-<script>
-const nodes = new vis.DataSet([
-  {
-    id: 1,
-    label: "M. A. Zaighum",
-    value: 60,
-    color: { background:"#0b2545", border:"#f59e0b", highlight:{background:"#0b2545", border:"#fde68a"} },
-    font:{color:"#ffffff", size:24, face:"Segoe UI", bold:true},
-    shape:"dot"
-  },
-  { id: 2, label:"H. Nafis", value:25 },
-  { id: 3, label:"A. Meskhi", value:34 },
-  { id: 4, label:"E. Nursultanov", value:16 },
-  { id: 5, label:"H. Rafeiro", value:30 },
-  { id: 6, label:"F. Shabbir", value:18 },
-  { id: 7, label:"A. Kainat", value:14 },
-  { id: 8, label:"D. Suragan", value:18 },
-  { id: 9, label:"A. Ghorbanalizadeh", value:14 },
-  { id:10, label:"A. Orazbayev", value:14 },
-  { id:11, label:"V. Kokilashvili", value:24 }
-]);
-
-const edges = new vis.DataSet([
-  { from:1, to:3, value:8, title:"Major collaboration", color:{color:"#0f766e"} },
-  { from:1, to:5, value:7, title:"Major collaboration", color:{color:"#0f766e"} },
-  { from:1, to:11, value:5, title:"Repeated collaboration", color:{color:"#0f766e"} },
-  { from:1, to:2, value:4, title:"Repeated collaboration", color:{color:"#d97706"} },
-  { from:1, to:6, value:2, title:"Collaboration", color:{color:"#d97706"} },
-  { from:1, to:7, value:1, title:"Collaboration", color:{color:"#2563eb"} },
-  { from:1, to:8, value:2, title:"Collaboration", color:{color:"#2563eb"} },
-  { from:1, to:4, value:1, title:"Collaboration", color:{color:"#2563eb"} },
-  { from:1, to:9, value:1, title:"Collaboration", color:{color:"#2563eb"} },
-  { from:1, to:10, value:1, title:"Collaboration", color:{color:"#2563eb"} },
-
-  { from:3, to:5, value:5, title:"Joint collaboration cluster" },
-  { from:3, to:11, value:4, title:"Joint collaboration cluster" },
-  { from:5, to:2, value:3, title:"Joint collaboration cluster" },
-  { from:2, to:6, value:2, title:"Joint collaboration cluster" },
-  { from:8, to:4, value:1, title:"Joint work cluster" },
-  { from:9, to:1, value:1 },
-  { from:10, to:1, value:1 }
-]);
-
-const container = document.getElementById("coauthorNetwork");
-const data = { nodes, edges };
-
-const options = {
-  autoResize: true,
-  nodes: {
-    shape: "dot",
-    scaling: { min: 18, max: 56 },
-    color: {
-      background: "#dbeafe",
-      border: "#0f766e",
-      highlight: { background: "#fde68a", border: "#d97706" },
-      hover: { background: "#ccfbf1", border: "#0f766e" }
-    },
-    borderWidth: 3,
-    shadow: { enabled:true, color:"rgba(15,23,42,.25)", size:16, x:0, y:8 },
-    font: { color: "#172033", size: 16, face: "Segoe UI", bold:true }
-  },
-  edges: {
-    color: { color: "#94a3b8", highlight: "#d97706", hover:"#d97706" },
-    smooth: { enabled:true, type:"dynamic", roundness:.35 },
-    scaling: { min: 1.5, max: 9 },
-    width: 2,
-    shadow: { enabled:true, color:"rgba(15,23,42,.15)", size:8, x:0, y:3 }
-  },
-  physics: {
-    enabled: true,
-    solver: "forceAtlas2Based",
-    forceAtlas2Based: {
-      gravitationalConstant: -88,
-      centralGravity: 0.018,
-      springLength: 170,
-      springConstant: 0.08,
-      damping: 0.42,
-      avoidOverlap: 0.8
-    },
-    stabilization: { enabled:true, iterations:180, updateInterval:20 }
-  },
-  interaction: {
-    hover: true,
-    tooltipDelay: 100,
-    navigationButtons: true,
-    keyboard: true,
-    zoomView: true,
-    dragNodes: true
-  }
-};
-
-const network = new vis.Network(container, data, options);
-
-/* Gentle living-animation effect */
-let pulse = 0;
-setInterval(() => {
-  pulse += 1;
-  const size = 60 + Math.sin(pulse / 4) * 3;
-  nodes.update({id:1, value:size});
-}, 600);
-
-setTimeout(() => {
-  network.fit({animation:{duration:1200, easingFunction:"easeInOutQuad"}});
-}, 700);
-</script>
-
-
+<section id="conferences" class="section-light"><h2>Selected Conferences and Talks</h2><div class="talk"><strong>15th ISAAC Congress</strong>, Nazarbayev University, Astana, Kazakhstan, July 2025. Talk: “Hardy-Littlewood Sobolev theorem on net spaces.”</div><div class="talk"><strong>Traditional International April Mathematical Conference in Honor of the Kazakhstan Day of Science</strong>, Institute of Mathematics and Mathematical Modelling, Almaty, Kazakhstan, April 2025. Plenary talk: “Grand Net Spaces and Application.”</div><div class="talk"><strong>Conference on Actual Problems of Analysis, Differential Equations and Algebra - 2025</strong>, Eurasian National University, Astana, Kazakhstan, January 2025. Talk: “On a Generalization of Net Spaces.”</div><div class="talk"><strong>ICOMET 2023</strong>, IBA Sukkur, March 2023. Keynote Speaker.</div><div class="talk"><strong>Winter Workshop on Mathematical Sciences</strong>, Abdus Salam School of Mathematical Sciences, Lahore, Pakistan, December 2017. Invited Speaker.</div></section>
 
 <section id="contact" class="section-light"><h2>Contact</h2><div class="contact-box"><p><strong>Email:</strong> <a href="mailto:asadzaighum@gmail.com">asadzaighum@gmail.com</a></p><p><strong>Academic Email:</strong> <a href="mailto:asad.zaighum@riphah.edu.pk">asad.zaighum@riphah.edu.pk</a> and <a href="mailto:m.asad_zaighum@hw.ac.uk">m.asad_zaighum@hw.ac.uk</a></p><p><strong>Location:</strong> Aktobe, Kazakhstan</p><p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2677-1957" target="_blank">0000-0003-2677-1957</a></p><p><strong>Google Scholar:</strong> <a href="https://scholar.google.com.pk/citations?user=3chi74IAAAAJ&hl=en" target="_blank">View Profile</a></p><p><strong>Scopus Author ID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=55507494500" target="_blank">55507494500</a></p><p><strong>Web of Science Researcher ID:</strong> <a href="https://www.webofscience.com/wos/author/record/I-8235-2012" target="_blank">I-8235-2012</a></p></div></section>
 <footer><p>© 2026 Dr. Muhammad Asad Zaighum | Academic Portfolio</p></footer>
