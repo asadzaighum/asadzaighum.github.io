@@ -561,6 +561,86 @@ footer{
 .n7{left:53px !important;top:310px !important;}
 .n8{left:31px !important;top:183px !important;}
 .n10{left:88px !important;top:65px !important;}
+
+/* === FINAL STATIC 10-NODE CO-AUTHOR NETWORK: symmetric, non-interactive === */
+.network-map{
+  width:500px !important;
+  height:500px !important;
+  margin:0 auto !important;
+  position:relative !important;
+}
+.network-map svg{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+}
+.node{
+  position:absolute !important;
+  border-radius:50% !important;
+  background:radial-gradient(circle at 30% 22%,#1b9aa6,#07505d 74%) !important;
+  color:white !important;
+  box-shadow:0 9px 18px rgba(0,0,0,.30) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  font-weight:900 !important;
+  line-height:1.08 !important;
+  padding:7px !important;
+  animation:float 4.5s ease-in-out infinite !important;
+  overflow:hidden !important;
+  word-break:normal !important;
+}
+.center-node{
+  width:126px !important;
+  height:126px !important;
+  left:187px !important;
+  top:187px !important;
+  z-index:5 !important;
+  background:radial-gradient(circle at 34% 24%,#f7c85d 0%,#d99408 78%) !important;
+  font-size:17px !important;
+  display:flex !important;
+}
+.ring{
+  left:171px !important;
+  top:171px !important;
+  width:158px !important;
+  height:158px !important;
+}
+.n1{width:82px !important;height:82px !important;left:209px !important;top:21px !important;font-size:13px !important;display:flex !important;}
+.n2{width:90px !important;height:90px !important;left:316px !important;top:53px !important;font-size:13px !important;display:flex !important;}
+.n3{width:72px !important;height:72px !important;left:393px !important;top:156px !important;font-size:12px !important;display:flex !important;}
+.n4{width:88px !important;height:88px !important;left:385px !important;top:264px !important;font-size:13px !important;display:flex !important;}
+.n5{width:76px !important;height:76px !important;left:323px !important;top:364px !important;font-size:12px !important;display:flex !important;}
+.n6{width:72px !important;height:72px !important;left:214px !important;top:402px !important;font-size:12px !important;display:flex !important;}
+.n7{width:72px !important;height:72px !important;left:103px !important;top:366px !important;font-size:10px !important;display:flex !important;}
+.n8{width:72px !important;height:72px !important;left:35px !important;top:272px !important;font-size:12px !important;display:flex !important;}
+.n9{width:84px !important;height:84px !important;left:29px !important;top:150px !important;font-size:10px !important;display:flex !important;}
+.n10{width:72px !important;height:72px !important;left:103px !important;top:62px !important;font-size:10px !important;display:flex !important;}
+@media(max-width:760px){
+  .network-map{
+    transform:scale(.70) !important;
+    transform-origin:top center !important;
+    height:350px !important;
+  }
+}
+
+
+/* === Final readability fix for long co-author names === */
+.node{
+  white-space:normal !important;
+  word-break:normal !important;
+  overflow:visible !important;
+  line-height:1.08 !important;
+}
+.n7{
+  width:96px !important;
+  height:96px !important;
+  font-size:10px !important;
+  padding:8px !important;
+}
+
 </style>
 </head>
 
@@ -630,33 +710,38 @@ footer{
   <div class="network-box" id="coauthors">
     <h2 class="block-title"><span class="title-icon">♙</span> Co-author Network</h2>
     <div class="network-map">
-      <svg viewBox="0 0 500 500"><g stroke="#b9c7d6" stroke-width="1.25" opacity=".78"><line x1="250" y1="250" x2="250.0" y2="62.0"/>
-<line x1="250" y1="250" x2="370.8" y2="106.0"/>
-<line x1="250" y1="250" x2="435.1" y2="217.4"/>
-<line x1="250" y1="250" x2="412.8" y2="344.0"/>
-<line x1="250" y1="250" x2="314.3" y2="426.7"/>
-<line x1="250" y1="250" x2="185.7" y2="426.7"/>
-<line x1="250" y1="250" x2="87.2" y2="344.0"/>
-<line x1="250" y1="250" x2="64.9" y2="217.4"/>
-<line x1="250" y1="250" x2="129.2" y2="106.0"/>
-<line x1="250.0" y1="62.0" x2="370.8" y2="106.0"/>
-<line x1="370.8" y1="106.0" x2="435.1" y2="217.4"/>
-<line x1="435.1" y1="217.4" x2="412.8" y2="344.0"/>
-<line x1="412.8" y1="344.0" x2="314.3" y2="426.7"/>
-<line x1="314.3" y1="426.7" x2="185.7" y2="426.7"/>
-<line x1="185.7" y1="426.7" x2="87.2" y2="344.0"/>
-<line x1="87.2" y1="344.0" x2="64.9" y2="217.4"/>
-<line x1="64.9" y1="217.4" x2="129.2" y2="106.0"/>
-<line x1="129.2" y1="106.0" x2="250.0" y2="62.0"/>
-<line x1="250.0" y1="62.0" x2="412.8" y2="344.0"/>
-<line x1="370.8" y1="106.0" x2="314.3" y2="426.7"/>
-<line x1="435.1" y1="217.4" x2="185.7" y2="426.7"/>
-<line x1="412.8" y1="344.0" x2="87.2" y2="344.0"/>
-<line x1="314.3" y1="426.7" x2="64.9" y2="217.4"/>
-<line x1="185.7" y1="426.7" x2="129.2" y2="106.0"/>
-<line x1="87.2" y1="344.0" x2="250.0" y2="62.0"/>
-<line x1="64.9" y1="217.4" x2="370.8" y2="106.0"/>
-<line x1="129.2" y1="106.0" x2="435.1" y2="217.4"/></g></svg>
+      <svg viewBox="0 0 500 500"><g stroke="#b9c7d6" stroke-width="1.25" opacity=".78">
+<line x1="250" y1="250" x2="250.0" y2="62.0"/>
+<line x1="250" y1="250" x2="360.5" y2="97.9"/>
+<line x1="250" y1="250" x2="428.8" y2="191.9"/>
+<line x1="250" y1="250" x2="428.8" y2="308.1"/>
+<line x1="250" y1="250" x2="360.5" y2="402.1"/>
+<line x1="250" y1="250" x2="250.0" y2="438.0"/>
+<line x1="250" y1="250" x2="139.5" y2="402.1"/>
+<line x1="250" y1="250" x2="71.2" y2="308.1"/>
+<line x1="250" y1="250" x2="71.2" y2="191.9"/>
+<line x1="250" y1="250" x2="139.5" y2="97.9"/>
+<line x1="250.0" y1="62.0" x2="360.5" y2="97.9"/>
+<line x1="360.5" y1="97.9" x2="428.8" y2="191.9"/>
+<line x1="428.8" y1="191.9" x2="428.8" y2="308.1"/>
+<line x1="428.8" y1="308.1" x2="360.5" y2="402.1"/>
+<line x1="360.5" y1="402.1" x2="250.0" y2="438.0"/>
+<line x1="250.0" y1="438.0" x2="139.5" y2="402.1"/>
+<line x1="139.5" y1="402.1" x2="71.2" y2="308.1"/>
+<line x1="71.2" y1="308.1" x2="71.2" y2="191.9"/>
+<line x1="71.2" y1="191.9" x2="139.5" y2="97.9"/>
+<line x1="139.5" y1="97.9" x2="250.0" y2="62.0"/>
+<line x1="250.0" y1="62.0" x2="428.8" y2="308.1"/>
+<line x1="360.5" y1="97.9" x2="360.5" y2="402.1"/>
+<line x1="428.8" y1="191.9" x2="250.0" y2="438.0"/>
+<line x1="428.8" y1="308.1" x2="139.5" y2="402.1"/>
+<line x1="360.5" y1="402.1" x2="71.2" y2="308.1"/>
+<line x1="250.0" y1="438.0" x2="71.2" y2="191.9"/>
+<line x1="139.5" y1="402.1" x2="139.5" y2="97.9"/>
+<line x1="71.2" y1="308.1" x2="250.0" y2="62.0"/>
+<line x1="71.2" y1="191.9" x2="360.5" y2="97.9"/>
+<line x1="139.5" y1="97.9" x2="428.8" y2="191.9"/>
+</g></svg>
       <div class="ring"></div>
       <div class="node center-node">Muhammad<br>Asad<br>Zaighum</div>
       <div class="node n1">H.<br>Nafis</div>
@@ -664,10 +749,11 @@ footer{
       <div class="node n3">E.<br>Nursultanov</div>
       <div class="node n4">H.<br>Rafeiro</div>
       <div class="node n5">F.<br>Shabbir</div>
-      <div class="node n7">D.<br>Suragan</div>
+      <div class="node n6">D.<br>Suragan</div>
+      <div class="node n7">A.<br>Ghorbanali<br>zadeh</div>
       <div class="node n8">A.<br>Orazbayev</div>
-      <div class="node n9">A.<br>Ghorbanalizadeh</div>
-      <div class="node n10">V.<br>Kokilashvili</div>
+      <div class="node n9">V.<br>Kokilashvili</div>
+      <div class="node n10">A.<br>Tulendinova</div>
     </div>
   </div>
 </section>
