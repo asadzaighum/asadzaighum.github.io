@@ -39,20 +39,22 @@ header{
   position:relative;
   overflow:hidden;
   color:white;
-  padding:92px 22px 86px;
+  padding:112px 22px 104px;
   background:
-    linear-gradient(135deg,rgba(6,24,39,.95),rgba(11,37,69,.94) 46%,rgba(15,118,110,.90)),
-    radial-gradient(circle at top right,rgba(246,196,83,.32),transparent 30%);
+    linear-gradient(90deg,rgba(6,24,39,.92),rgba(6,24,39,.72) 48%,rgba(6,24,39,.52)),
+    url('banner.png');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
 }
 header:before{
   content:"";
   position:absolute;
   inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
-  background-size:42px 42px;
-  opacity:.35;
+  background:
+    radial-gradient(circle at 18% 35%,rgba(245,158,11,.22),transparent 24%),
+    linear-gradient(180deg,rgba(6,24,39,.12),rgba(6,24,39,.55));
+  pointer-events:none;
 }
 .hero{
   position:relative;
@@ -64,8 +66,8 @@ header:before{
   flex-wrap:wrap;
 }
 .profile-img{
-  width:260px;
-  height:260px;
+  width:218px;
+  height:218px;
   border-radius:50%;
   object-fit:cover;
   border:8px solid rgba(255,255,255,.95);
@@ -75,6 +77,12 @@ header:before{
 .hero-text{
   flex:1;
   min-width:310px;
+  background:rgba(6,24,39,.46);
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:28px;
+  padding:30px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 24px 60px rgba(0,0,0,.26);
 }
 .hero-text h1{
   font-size:54px;
@@ -256,7 +264,7 @@ footer{
   padding:30px;
 }
 @media(max-width:760px){
-  header{padding:66px 18px}
+  header{padding:66px 18px;background-attachment:scroll;background-position:center top}
   .hero{text-align:center;justify-content:center}
   .profile-img{width:210px;height:210px}
   .hero-text h1{font-size:38px}
@@ -506,131 +514,7 @@ setTimeout(() => {
 }, 700);
 </script>
 
-<script>
-const nodes = new vis.DataSet([
-  { id: 1, label: "M. A. Zaighum", value: 42, color: {background:"#0b3c5d", border:"#f59e0b"}, font:{color:"#ffffff", size:22, face:"Segoe UI"} },
 
-  { id: 2, label: "A. Meskhi", value: 20 },
-  { id: 3, label: "H. Rafeiro", value: 18 },
-  { id: 4, label: "V. Kokilashvili", value: 14 },
-  { id: 5, label: "H. Nafis", value: 14 },
-  { id: 6, label: "F. Shabbir", value: 10 },
-  { id: 7, label: "M. A. Iqbal", value: 12 },
-  { id: 8, label: "M. Imran", value: 12 },
-  { id: 9, label: "S. Hussain", value: 10 },
-  { id: 10, label: "S. Khan", value: 9 },
-  { id: 11, label: "M. Darus", value: 8 },
-  { id: 12, label: "T. Imran", value: 8 },
-  { id: 13, label: "M. Ashiq", value: 8 },
-  { id: 14, label: "D. Suragan", value: 9 },
-  { id: 15, label: "E. Nursultanov", value: 7 },
-  { id: 16, label: "A. Orazbayev", value: 7 },
-  { id: 17, label: "A. Tulendinova", value: 7 },
-  { id: 18, label: "A. Ghorbanalizadeh", value: 7 },
-  { id: 19, label: "A. Kainat", value: 7 },
-  { id: 20, label: "A. Mehmood", value: 7 },
-  { id: 21, label: "M. Al-Shomrani", value: 6 },
-  { id: 22, label: "Abdullah", value: 6 },
-  { id: 23, label: "J. Wei", value: 6 },
-  { id: 24, label: "M. K. Siddiqui", value: 6 },
-  { id: 25, label: "Y. Liu", value: 6 },
-  { id: 26, label: "A. Q. Baig", value: 6 },
-  { id: 27, label: "W. Khalid", value: 6 },
-  { id: 28, label: "A. Rasheed", value: 6 }
-]);
-
-const edges = new vis.DataSet([
-  { from:1, to:2, value:8, title:"Multiple collaborations" },
-  { from:1, to:3, value:7, title:"Multiple collaborations" },
-  { from:1, to:4, value:5, title:"Multiple collaborations" },
-  { from:1, to:5, value:4, title:"Multiple collaborations" },
-  { from:1, to:6, value:2, title:"Repeated collaboration" },
-  { from:1, to:7, value:4, title:"Repeated collaboration" },
-  { from:1, to:8, value:4, title:"Repeated collaboration" },
-  { from:1, to:9, value:3, title:"Repeated collaboration" },
-  { from:1, to:10, value:2 },
-  { from:1, to:11, value:2 },
-  { from:1, to:12, value:2 },
-  { from:1, to:13, value:2 },
-  { from:1, to:14, value:2 },
-  { from:1, to:15, value:1 },
-  { from:1, to:16, value:1 },
-  { from:1, to:17, value:1 },
-  { from:1, to:18, value:1 },
-  { from:1, to:19, value:1 },
-  { from:1, to:20, value:1 },
-  { from:1, to:21, value:1 },
-  { from:1, to:22, value:1 },
-  { from:1, to:23, value:1 },
-  { from:1, to:24, value:1 },
-  { from:1, to:25, value:1 },
-  { from:1, to:26, value:1 },
-  { from:1, to:27, value:1 },
-  { from:1, to:28, value:1 },
-
-  { from:2, to:3, value:5 },
-  { from:2, to:4, value:4 },
-  { from:3, to:5, value:3 },
-  { from:5, to:6, value:2 },
-  { from:7, to:8, value:4 },
-  { from:8, to:23, value:1 },
-  { from:7, to:24, value:1 },
-  { from:8, to:25, value:1 },
-  { from:8, to:26, value:1 },
-  { from:8, to:27, value:1 },
-  { from:9, to:10, value:2 },
-  { from:9, to:11, value:2 },
-  { from:10, to:11, value:2 },
-  { from:12, to:13, value:2 },
-  { from:14, to:15, value:1 },
-  { from:17, to:18, value:1 },
-  { from:20, to:21, value:1 },
-  { from:20, to:22, value:1 }
-]);
-
-const container = document.getElementById("coauthorNetwork");
-const data = { nodes, edges };
-
-const options = {
-  autoResize: true,
-  nodes: {
-    shape: "dot",
-    scaling: { min: 12, max: 44 },
-    color: {
-      background: "#e0f2fe",
-      border: "#0f766e",
-      highlight: { background: "#fde68a", border: "#d97706" }
-    },
-    borderWidth: 2,
-    font: { color: "#172033", size: 15, face: "Segoe UI" }
-  },
-  edges: {
-    color: { color: "#94a3b8", highlight: "#d97706" },
-    smooth: { type: "continuous" },
-    scaling: { min: 1, max: 8 },
-    width: 1.5
-  },
-  physics: {
-    enabled: true,
-    barnesHut: {
-      gravitationalConstant: -6200,
-      centralGravity: 0.18,
-      springLength: 155,
-      springConstant: 0.045,
-      damping: 0.12
-    },
-    stabilization: { iterations: 250 }
-  },
-  interaction: {
-    hover: true,
-    tooltipDelay: 120,
-    navigationButtons: true,
-    keyboard: true
-  }
-};
-
-new vis.Network(container, data, options);
-</script>
 
 <section id="contact" class="section-light"><h2>Contact</h2><div class="contact-box"><p><strong>Email:</strong> <a href="mailto:asadzaighum@gmail.com">asadzaighum@gmail.com</a></p><p><strong>Academic Email:</strong> <a href="mailto:asad.zaighum@riphah.edu.pk">asad.zaighum@riphah.edu.pk</a> and <a href="mailto:m.asad_zaighum@hw.ac.uk">m.asad_zaighum@hw.ac.uk</a></p><p><strong>Location:</strong> Aktobe, Kazakhstan</p><p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2677-1957" target="_blank">0000-0003-2677-1957</a></p><p><strong>Google Scholar:</strong> <a href="https://scholar.google.com.pk/citations?user=3chi74IAAAAJ&hl=en" target="_blank">View Profile</a></p><p><strong>Scopus Author ID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=55507494500" target="_blank">55507494500</a></p><p><strong>Web of Science Researcher ID:</strong> <a href="https://www.webofscience.com/wos/author/record/I-8235-2012" target="_blank">I-8235-2012</a></p></div></section>
 <footer><p>© 2026 Dr. Muhammad Asad Zaighum | Academic Portfolio</p></footer>
