@@ -1,62 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Muhammad Asad Zaighum | Academic Portfolio</title>
+
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:#f5f7fb;color:#1f2937;line-height:1.7}a{color:#0f766e;text-decoration:none}a:hover{color:#d97706;text-decoration:underline}header{background:radial-gradient(circle at top right,rgba(245,158,11,.22),transparent 28%),linear-gradient(135deg,#071a2f,#0b3c5d,#0f766e);color:white;padding:80px 20px 70px}.hero{max-width:1180px;margin:auto;display:flex;align-items:center;gap:48px;flex-wrap:wrap}.profile-img{width:245px;height:245px;border-radius:50%;object-fit:cover;border:7px solid white;box-shadow:0 20px 45px rgba(0,0,0,.38);background:#e5e7eb}.hero-text{flex:1;min-width:300px}.hero-text h1{font-size:48px;margin:0;letter-spacing:-.5px}.hero-text h2{font-weight:400;color:#dbeafe;margin:10px 0 16px}.hero-text p{max-width:820px;font-size:18px}.badges{margin:20px 0}.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.35);border-radius:999px;margin:5px 6px 5px 0;background:rgba(255,255,255,.10);font-size:14px}.btn{display:inline-block;background:#f59e0b;color:white;padding:12px 20px;margin:8px 8px 0 0;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 8px 18px rgba(0,0,0,.18);transition:.25s}.btn:hover{background:#d97706;color:white;transform:translateY(-2px);text-decoration:none}.btn-outline{background:transparent;border:2px solid white}nav{background:#061827;text-align:center;padding:14px;position:sticky;top:0;z-index:1000;box-shadow:0 4px 14px rgba(0,0,0,.2)}nav a{color:white;text-decoration:none;margin:0 12px;font-weight:600;font-size:15px}nav a:hover{color:#f59e0b;text-decoration:none}section{max-width:1180px;margin:auto;padding:62px 20px}.section-light{background:#fff}h2{font-size:31px;color:#0b3c5d;margin-bottom:26px;border-left:7px solid #f59e0b;padding-left:14px}h3{color:#134e6f;margin-top:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:24px}.card{background:white;padding:26px;border-radius:17px;box-shadow:0 10px 25px rgba(15,23,42,.08);border-top:5px solid #0f766e;transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(15,23,42,.13)}.metric-card{text-align:center}.metric-number{font-size:34px;font-weight:800;color:#0b3c5d}table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 25px rgba(15,23,42,.08)}th{background:#0b3c5d;color:white;padding:15px}td{padding:15px;border-bottom:1px solid #e5e7eb;text-align:center}.job,.publication,.talk,.award{background:white;padding:22px;margin-bottom:18px;border-radius:14px;box-shadow:0 8px 20px rgba(15,23,42,.07)}.job{border-left:6px solid #0f766e}.publication{border-left:6px solid #d97706}.talk{border-left:6px solid #2563eb}.award{border-left:6px solid #9333ea}.date{color:#64748b;font-weight:bold}.publication strong a{color:#0b3c5d}.publication strong a:hover{color:#d97706}details{margin-top:20px}summary{cursor:pointer;font-weight:bold;color:#0b3c5d;font-size:18px}.contact-box{background:linear-gradient(135deg,#0b3c5d,#0f766e);color:white;border-radius:20px;padding:36px;text-align:center;box-shadow:0 14px 35px rgba(15,23,42,.22)}.contact-box a{color:#fde68a}footer{background:#061827;color:white;text-align:center;padding:28px}@media(max-width:760px){.hero{text-align:center;justify-content:center}.hero-text h1{font-size:36px}nav a{display:inline-block;margin:6px}table{font-size:14px}}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, #071a2f, #0b3c5d, #0f766e);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  color: #dbeafe;
+}
+
+.badge {
+  display: inline-block;
+  margin: 5px;
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f59e0b;
+  color: white;
+  padding: 10px 18px;
+  margin: 10px 10px 0 0;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+nav {
+  background: #061827;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  color: #0b3c5d;
+  border-left: 5px solid #f59e0b;
+  padding-left: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.publication {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #f59e0b;
+}
+
+.contact-box {
+  background: #0b3c5d;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+footer {
+  background: #061827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 </style>
 </head>
+
 <body>
-<header><div class="hero"><img src="profile.jpg" alt="Dr. Muhammad Asad Zaighum" class="profile-img"><div class="hero-text"><h1>Dr. Muhammad Asad Zaighum</h1><h2>Mathematician | Researcher | Associate Professor</h2><p>My research lies at the intersection of harmonic analysis and functional analysis, with a particular focus on analysis associated with non-standard function spaces. I bring nearly a decade of university-level teaching experience, an active research career, graduate supervision, and academic leadership experience.</p><div class="badges"><span class="badge">Harmonic Analysis</span><span class="badge">Functional Analysis</span><span class="badge">Function Spaces</span><span class="badge">Operator Theory</span></div><a class="btn" href="#publications">View Publications</a><a class="btn" href="CV_M_A_Zaighum.pdf" target="_blank">Download CV</a><a class="btn btn-outline" href="#contact">Contact Me</a></div></div></header>
-<nav><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#metrics">Metrics</a><a href="#publications">Publications</a><a href="#supervision">Supervision</a><a href="#contact">Contact</a></nav>
-<section id="about"><h2>About</h2><div class="grid"><div class="card"><h3>Research Profile</h3><p>My research focuses on harmonic analysis, functional analysis, theory of function spaces, grand function spaces, weighted norm inequalities, and complex interpolation.</p></div><div class="card"><h3>Academic Leadership</h3><p>I have served as Head of Department of Mathematics and Statistics at <a href="https://riphah.edu.pk" target="_blank">Riphah International University</a>, with experience in academic management, curriculum development, and institutional leadership.</p></div><div class="card"><h3>Teaching & Mentoring</h3><p>I have taught undergraduate and postgraduate mathematics courses and supervised Ph.D. and M.Phil. students in mathematics.</p></div></div></section>
-<section id="research" class="section-light"><h2>Research Interests</h2><div class="grid"><div class="card"><h3>Harmonic Analysis</h3><p>Riesz potentials, Marcinkiewicz integrals, Calderón-Zygmund operators, and boundedness problems.</p></div><div class="card"><h3>Function Spaces</h3><p>Variable exponent spaces, Herz spaces, Hardy spaces, Morrey spaces, grand spaces, and net spaces.</p></div><div class="card"><h3>Operator Theory</h3><p>Kernel operators, maximal operators, potential operators, interpolation theory, and weighted inequalities.</p></div></div></section>
-<section id="profiles"><h2>Academic Profiles</h2><div class="grid"><div class="card metric-card"><h3>ORCID</h3><p><a href="https://orcid.org/0000-0003-2677-1957" target="_blank">0000-0003-2677-1957</a></p></div><div class="card metric-card"><h3>Google Scholar</h3><p><a href="https://scholar.google.com.pk/citations?user=3chi74IAAAAJ&hl=en" target="_blank">View Profile</a></p></div><div class="card metric-card"><h3>Scopus</h3><p><a href="https://www.scopus.com/authid/detail.uri?authorId=55507494500" target="_blank">Author ID: 55507494500</a></p></div><div class="card metric-card"><h3>Web of Science</h3><p><a href="https://www.webofscience.com/wos/author/record/I-8235-2012" target="_blank">Researcher ID: I-8235-2012</a></p></div></div></section>
-<section id="metrics" class="section-light"><h2>Research Metrics</h2><div class="grid"><div class="card metric-card"><h3>Scopus Indexed Articles</h3><div class="metric-number">34</div></div><div class="card metric-card"><h3>WoS Indexed Articles</h3><div class="metric-number">31</div></div><div class="card metric-card"><h3>Scopus h-index</h3><div class="metric-number">11</div></div><div class="card metric-card"><h3>WoS h-index</h3><div class="metric-number">10</div></div></div><p><em>Updated April 2026</em></p></section>
-<section id="education"><h2>Academic Qualifications</h2><div class="job"><h3>Ph.D. in Mathematics</h3><p class="date">2009 – 2014</p><p>Abdus Salam School of Mathematical Sciences, Government College University Lahore, Lahore, Pakistan.</p><p><strong>Dissertation:</strong> Kernel Operators in Some New Function Spaces</p><p><strong>Advisor:</strong> <a href="https://www.kiu.edu.ge/?m=316" target="_blank">Professor Alexander Meskhi</a></p></div><div class="job"><h3>BS Mathematics</h3><p class="date">2005 – 2009</p><p>COMSATS Institute of Information and Technology, Islamabad, Pakistan.</p><p><strong>Project:</strong> Perturbation Methods in Physiological Flows</p><p><strong>Advisor:</strong> <a href="https://www.paspk.org/fellow-profile/?fellowID=16" target="_blank">Professor Saleem Asghar</a></p></div></section>
-<section id="experience" class="section-light"><h2>Professional Experience</h2><div class="job"><h3><a href="https://zhubanov.edu.kz/en/campus_hw/category/4/" target="_blank">Heriot-Watt International Faculty, K. Zhubanov Aktobe Regional University</a></h3><p class="date">Associate Professor | December 2025 – Present | Aktobe, Kazakhstan</p><p>Teaching mathematics at Global College, Heriot-Watt University, foundation-level Mathematics course (SCQF Level 7).</p></div><div class="job"><h3><a href="https://nu.edu.kz" target="_blank">Nazarbayev University</a></h3><p class="date">Postdoctoral Research Assistant | August 2024 – December 2025 | Astana, Kazakhstan</p><p>Conducting research under the project “Qualitative analysis for nonlocal and fractional models.”</p></div><div class="job"><h3><a href="https://riphah.edu.pk" target="_blank">Riphah International University</a></h3><p class="date">Head of Department, Mathematics and Statistics | September 2020 – On Leave Since August 2024 | Islamabad, Pakistan</p><p>Overseeing departmental operations, curriculum development, academic programs, and faculty coordination.</p></div><div class="job"><h3><a href="https://riphah.edu.pk/faculty/profile/?id=737" target="_blank">Riphah International University Faculty Profile</a></h3><p class="date">Associate Professor, Mathematics and Statistics | September 2018 – On Leave Since August 2024 | Islamabad, Pakistan</p><p>Teaching undergraduate and postgraduate students and supervising Ph.D. and M.Phil. students in mathematics.</p></div><div class="job"><h3><a href="https://www.javeriana.edu.co/inicio" target="_blank">Pontificia Universidad Javeriana</a></h3><p class="date">Postdoctoral Investigator | May 2015 – February 2016 | Bogota, Colombia</p><p>Conducted research with Professor Humberto Rafeiro on boundedness of operators in generalized Morrey spaces.</p></div><div class="job"><h3><a href="https://riphah.edu.pk" target="_blank">Riphah International University</a></h3><p class="date">Assistant Professor, Mathematics and Statistics | April 2014 – August 2018 | Islamabad, Pakistan</p><p>Developed and taught undergraduate and graduate mathematics courses and supervised student research projects.</p></div></section>
-<section id="honors"><h2>Honors and Awards</h2><div class="award"><strong>Research Performance Prize</strong>, Abdus Salam School of Mathematical Sciences, GCU Lahore, November 2013.</div><div class="award"><strong>First Prize, Young Speaker</strong>, 6th World Conference on 21st Century Mathematics, March 2013.</div><div class="award"><strong>Award for Commendable Performance</strong>, Abdus Salam School of Mathematical Sciences, November 2010.</div><div class="award"><strong>Chancellor’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</div><div class="award"><strong>Institute’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</div></section>
-<section id="supervision" class="section-light"><h2>Research Supervision</h2><div class="grid"><div class="card"><h3>Ph.D. Supervision</h3><p><strong>Completed:</strong> 6</p><p><strong>Ongoing:</strong> 1</p><p>Topics include Geometric Function Theory, Harmonic Analysis, and Herz-Hardy type spaces with variable exponent.</p></div><div class="card"><h3>M.Phil. Supervision</h3><p><strong>Completed:</strong> 35</p><p><strong>Ongoing:</strong> 0</p><p>Supervision in advanced topics in function space theory.</p></div></div><details><summary>View Ph.D. Students Supervised</summary><table><tr><th>Name</th><th>Defense Date</th><th>Thesis Title</th></tr><tr><td>Hammad Nafis</td><td>25-08-2022</td><td>Boundedness of Some Operators on variable exponent function spaces</td></tr><tr><td>M Azhar Iqbal</td><td>17-02-2021</td><td>On Molecular Topological Properties of Chemical Graphs and Networks</td></tr><tr><td>Arif Mehmood</td><td>26-01-2021</td><td>Some Contribution to Bi soft Topological Spaces</td></tr><tr><td>Shahid Khan</td><td>17-06-2020</td><td>Linear Operators and Related topics in geometric Function Theory</td></tr><tr><td>Akhter Rasheed</td><td>24-09-2019</td><td>Application of Convolution and Subordinate Techniques in Geometric Function Theory</td></tr><tr><td>Tahir Imran</td><td>30-08-2018</td><td>Parameterization and Graphical Representation of Certain Groups</td></tr></table></details></section>
-<section id="publications"><h2>Publications</h2><p>Titles are linked to their article pages or DOI records where available.</p>
-<div class="publication"><strong>[J.1] Orazbayev, A., &amp; Zaighum, M. A. (2025).</strong> <a href="https://www.degruyterbrill.com/document/doi/10.1515/gmj-2026-2017/html" target="_blank"><strong>Generalized potential operators in weighted grand Herz spaces</strong></a>. <em>Georgian Mathematical Journal</em>.</div>
-<div class="publication"><strong>[J.2] Nursultanov, E., Suragan, D., &amp; Zaighum, M. A. (2025).</strong> <a href="https://dergipark.org.tr/en/download/article-file/4943722" target="_blank"><strong>On the boundedness of Riesz potential operators: insights from net spaces</strong></a>. <em>Constructive Mathematical Analysis</em>.</div>
-<div class="publication"><strong>[J.3] Tulendinova, A., Ghorbanalizadeh, A., &amp; Zaighum, M. A. (2025).</strong> <a href="https://doi.org/10.1007/s11868-025-00731-5" target="_blank"><strong>On Grand Morrey Sequence Spaces</strong></a>. <em>Journal of Pseudo-Differential Operators and Applications</em>.</div>
-<div class="publication"><strong>[J.4] Kainat, A., Nafis, H., &amp; Zaighum, M. A. (2025).</strong> <a href="https://doi.org/10.1007/s10958-025-07803-3" target="_blank"><strong>Boundedness of Parametric Marcinkiewicz Integral Operator on Grand Variable Exponent Herz Spaces</strong></a>. <em>Journal of Mathematical Sciences</em>.</div>
-<div class="publication"><strong>[A.1] Suragan, D., &amp; Zaighum, M. A. (2025).</strong> <a href="https://arxiv.org/abs/2503.20080" target="_blank"><strong>Grand Net Spaces and Applications to Integral Operators</strong></a>. <em>Accepted: Rendiconti del Circolo Matematico di Palermo Series 2</em>.</div>
-<div class="publication"><strong>[J.5] Shabbir, F., &amp; Zaighum, M. A. (2025).</strong> <a href="https://doi.org/10.1515/gmj-2025-2034" target="_blank"><strong>Boundedness of Marcinkiewicz integral operators on grand variable Herz-Hardy spaces</strong></a>. <em>Georgian Mathematical Journal</em>.</div>
-<div class="publication"><strong>[J.6] Shabbir, F., &amp; Zaighum, M. A. (2024).</strong> <a href="https://doi.org/10.1007/s00009-024-02593-5" target="_blank"><strong>On the Boundedness of Sublinear Operators on Grand Herz-Hardy Spaces with Variable Exponent</strong></a>. <em>Mediterranean Journal of Mathematics</em>, 21(2), 51.</div>
-<div class="publication"><strong>[J.7] Nafis, H., Rafeiro, H., &amp; Zaighum, M. A. (2022).</strong> <a href="https://doi.org/10.1155/2022/4845507" target="_blank"><strong>Boundedness of Multilinear Calderón-Zygmund Operators on Grand Variable Herz Spaces</strong></a>. <em>Journal of Function Spaces</em>, Article ID 4845507, 11 pages.</div>
-<div class="publication"><strong>[J.8] Nafis, H., Rafeiro, H., &amp; Zaighum, M. A. (2021).</strong> <a href="https://dx.doi.org/10.7153/jmi-2021-15-52" target="_blank"><strong>Boundedness of the Marcinkiewicz integral on Grand variable Herz spaces</strong></a>. <em>Journal of Mathematical Inequalities</em>, 15(2), 739–753.</div>
-<div class="publication"><strong>[J.9] Nafis, H., Rafeiro, H., &amp; Zaighum, M. A. (2020).</strong> <a href="https://doi.org/10.1186/s13660-019-2265-6" target="_blank"><strong>A note on the boundedness of sublinear operators on grand variable Herz spaces</strong></a>. <em>Journal of Inequalities and Applications</em>, 2020(1), 1.</div>
-<div class="publication"><strong>[J.10] Mehmood, A., Al-Shomrani, M., Zaighum, M. A., &amp; Abdullah. (2020).</strong> <a href="https://doi.org/10.3390/math8122100" target="_blank"><strong>Characterization of Soft S-Open Sets in Bi-Soft Topological Structure Concerning Crisp Points</strong></a>. <em>Mathematics</em>, 8(12), 2100.</div>
-<div class="publication"><strong>[J.11] Wei, J., Imran, M., Iqbal, M. A., &amp; Zaighum, M. A. (2020).</strong> <a href="https://doi.org/10.1155/2020/9767128" target="_blank"><strong>Zagreb-Type Indices of Vertex Join and Edge Join of Graphs</strong></a>. <em>Journal of Chemistry</em>, 2020, 1–10.</div>
-<div class="publication"><strong>[J.12] Iqbal, M. A., Imran, M., Siddiqui, M. K., &amp; Zaighum, M. A. (2020).</strong> <a href="https://doi.org/10.1080/10406638.2020.1783331" target="_blank"><strong>Computing Molecular Topological Descriptors of Polymeric Networks Modeled by Sierpinski Networks</strong></a>. <em>Polycyclic Aromatic Compounds</em>, 1–20.</div>
-<div class="publication"><strong>[J.13] Imran, M., Iqbal, M. A., Liu, Y., Baig, A. Q., Khalid, W., &amp; Zaighum, M. A. (2020).</strong> <a href="https://doi.org/10.1155/2020/3794592" target="_blank"><strong>Computing eccentricity-based topological indices of 2-power interconnection networks</strong></a>. <em>Journal of Chemistry</em>, 2020, 1–11.</div>
-<div class="publication"><strong>[J.14] Iqbal, M. A., Imran, M., &amp; Zaighum, M. A. (2020).</strong> <a href="https://doi.org/10.1515/mgmc-2020-0010" target="_blank"><strong>Eccentricity based topological indices of siloxane and POPAM dendrimers</strong></a>. <em>Main Group Metal Chemistry</em>, 43(1), 92–98.</div>
-<div class="publication"><strong>[J.15] Khan, S., Hussain, S., Zaighum, M. A., &amp; Darus, M. (2019).</strong> <a href="https://doi.org/10.1515/ms-2017-0271" target="_blank"><strong>A subclass of uniformly convex functions and a corresponding subclass of starlike function with fixed coefficient associated with q-analogue of Ruscheweyh operator</strong></a>. <em>Mathematica Slovaca</em>, 69(4), 825–832.</div>
-<div class="publication"><strong>[J.16] Meskhi, A., Rafeiro, H., &amp; Zaighum, M. A. (2019).</strong> <a href="https://doi.org/10.1515/gmj-2017-0050" target="_blank"><strong>On the boundedness of Marcinkiewicz integrals on continual variable exponent Herz spaces</strong></a>. <em>Georgian Mathematical Journal</em>, 26(1), 105–116.</div>
-<div class="publication"><strong>[J.17] Meskhi, A., Rafeiro, H., &amp; Zaighum, M. A. (2018).</strong> <a href="https://doi.org/10.32917/hmj/1544238031" target="_blank"><strong>Interpolation of an analytic family of operators on variable exponent Morrey spaces</strong></a>. <em>Hiroshima Mathematical Journal</em>, 48(3), 335–346.</div>
-<div class="publication"><strong>[J.18] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2018).</strong> <a href="https://doi.org/10.1215/17358787-2017-0063" target="_blank"><strong>Sharp weighted bounds for fractional integrals via the two-weight theory</strong></a>. <em>Banach Journal of Mathematical Analysis</em>, 12(3), 673–692.</div>
-<div class="publication"><strong>[J.19] Hussain, S., Khan, S., Zaighum, M. A., &amp; Darus, M. (2018).</strong> <a href="https://doi.org/10.1186/s13660-018-1888-3" target="_blank"><strong>Applications of a q-Salagean type operator on multivalent functions</strong></a>. <em>Journal of Inequalities and Applications</em>, 2018(1), 301.</div>
-<div class="publication"><strong>[J.20] Ashiq, M., Imran, T., &amp; Zaighum, M. A. (2017).</strong> <a href="http://bims.iranjournals.ir/article_1066_0.html" target="_blank"><strong>Defining relations of a group Γ = G<sup>3,4</sup>(2,Z) and its action on real quadratic field</strong></a>. <em>Bulletin of the Iranian Mathematical Society</em>, 43(6), 1811–1820.</div>
-<div class="publication"><strong>[J.21] Ashiq, M., Imran, T., &amp; Zaighum, M. A. (2018).</strong> <a href="https://doi.org/10.1016/j.trmi.2017.09.005" target="_blank"><strong>Actions of Δ(3,n,k) on projective line</strong></a>. <em>Transactions of A. Razmadze Mathematical Institute</em>, 172(1), 1–6.</div>
-<div class="publication"><strong>[J.22] Meskhi, A., Rafeiro, H., &amp; Zaighum, M. A. (2018).</strong> <a href="https://doi.org/10.1215/20088752-2017-0030" target="_blank"><strong>Central Calderón-Zygmund operators on Herz-type Hardy spaces of variable smoothness and integrability</strong></a>. <em>Annals of Functional Analysis</em>, 9(3), 310–321.</div>
-<div class="publication"><strong>[J.23] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2017).</strong> <a href="https://doi.org/10.1515/gmj-2017-0016" target="_blank"><strong>Sharp weighted bounds for one-sided operators</strong></a>. <em>Georgian Mathematical Journal</em>, 24(2), 227–240.</div>
-<div class="publication"><strong>[J.24] Hussain, S., Rasheed, A., Zaighum, M. A., &amp; Darus, M. (2017).</strong> <a href="https://doi.org/10.1155/2017/9010964" target="_blank"><strong>A Subclass of Analytic Functions Related to Uniformly Convex and Starlike Functions</strong></a>. <em>Journal of Function Spaces</em>, 2017, Article ID 9010964.</div>
-<div class="publication"><strong>[J.25] Meskhi, A., Rafeiro, H., &amp; Zaighum, M. A. (2017).</strong> <a href="https://doi.org/10.1080/17476933.2016.1244190" target="_blank"><strong>Complex interpolation on variable exponent Campanato spaces of order k</strong></a>. <em>Complex Variables and Elliptic Equations</em>, 62(6), 795–813.</div>
-<div class="publication"><strong>[J.26] Meskhi, A., &amp; Zaighum, M. A. (2016).</strong> <a href="https://doi.org/10.7153/jmi-10-50" target="_blank"><strong>Weighted Kernel Operators in L<sup>p(x)</sup>(R<sup>+</sup>) spaces</strong></a>. <em>Journal of Mathematical Inequalities</em>, 10(3), 623–639.</div>
-<div class="publication"><strong>[J.27] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2016).</strong> <a href="https://doi.org/10.1016/j.trmi.2015.12.001" target="_blank"><strong>Sharp weighted bounds for multiple operators</strong></a>. <em>Transactions of A. Razmadze Mathematical Institute</em>, 170(1), 75–90.</div>
-<div class="publication"><strong>[J.28] Meskhi, A., Rafeiro, H., &amp; Zaighum, M. A. (2016).</strong> <a href="https://doi.org/10.1016/j.jfa.2015.11.013" target="_blank"><strong>Interpolation on variable Morrey spaces defined on quasi-metric measure spaces</strong></a>. <em>Journal of Functional Analysis</em>, 270(10), 3946–3961.</div>
-<div class="publication"><strong>[J.29] Meskhi, A., &amp; Zaighum, M. A. (2014).</strong> <a href="https://doi.org/10.7153/jmi-08-08" target="_blank"><strong>On the Boundedness of maximal and potential operators in variable exponent amalgam spaces</strong></a>. <em>Journal of Mathematical Inequalities</em>, 8(1), 123–152.</div>
-<div class="publication"><strong>[J.30] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2013).</strong> <a href="https://doi.org/10.1007/s11117-013-0225-9" target="_blank"><strong>Positive kernel operators in L<sup>p(x)</sup> spaces</strong></a>. <em>Positivity</em>, 17(4), 1123–1140.</div>
-<div class="publication"><strong>[J.31] Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2013).</strong> <a href="https://doi.org/10.1186/1029-242X-2013-173" target="_blank"><strong>Weighted kernel operators in variable exponent amalgam spaces</strong></a>. <em>Journal of Inequalities and Applications</em>, 2013, 173.</div>
-<div class="publication"><strong>[J.32] Meskhi, A., &amp; Zaighum, M. A. (2012).</strong> <a href="https://doi.org/10.1515/gmj-2012-0020" target="_blank"><strong>On the boundedness of product kernel operators with measures</strong></a>. <em>Georgian Mathematical Journal</em>, 19(3), 533–557.</div>
+
+<header>
+  <div class="hero">
+    <img src="profile.jpg" class="profile-img">
+
+    <div class="hero-text">
+      <h1>Dr. Muhammad Asad Zaighum</h1>
+      <h2>Mathematician | Researcher | Associate Professor</h2>
+
+      <p>
+        My research lies at the intersection of harmonic analysis and functional analysis,
+        with a particular focus on non-standard function spaces.
+      </p>
+
+      <div>
+        <span class="badge">Non-Standard Function Spaces</span>
+        <span class="badge">Harmonic Analysis</span>
+        <span class="badge">Functional Analysis</span>
+        <span class="badge">Operator Theory</span>
+      </div>
+
+      <a class="btn" href="#publications">Publications</a>
+      <a class="btn" href="CV_M_A_Zaighum.pdf">Download CV</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="grid">
+    <div class="card">
+      Research in harmonic analysis, functional analysis and function spaces.
+    </div>
+    <div class="card">
+      Academic leadership experience as department chair.
+    </div>
+    <div class="card">
+      Nearly a decade of university-level teaching and supervision.
+    </div>
+  </div>
 </section>
-<section id="conferences" class="section-light"><h2>Selected Conferences and Talks</h2><div class="talk"><strong>15th ISAAC Congress</strong>, Nazarbayev University, Astana, Kazakhstan, July 2025. Talk: “Hardy-Littlewood Sobolev theorem on net spaces.”</div><div class="talk"><strong>Traditional International April Mathematical Conference in Honor of the Kazakhstan Day of Science</strong>, Institute of Mathematics and Mathematical Modelling, Almaty, Kazakhstan, April 2025. Plenary talk: “Grand Net Spaces and Application.”</div><div class="talk"><strong>Conference on Actual Problems of Analysis, Differential Equations and Algebra - 2025</strong>, Eurasian National University, Astana, Kazakhstan, January 2025. Talk: “On a Generalization of Net Spaces.”</div><div class="talk"><strong>ICOMET 2023</strong>, IBA Sukkur, March 2023. Keynote Speaker.</div><div class="talk"><strong>Winter Workshop on Mathematical Sciences</strong>, Abdus Salam School of Mathematical Sciences, Lahore, Pakistan, December 2017. Invited Speaker.</div></section>
-<section id="skills"><h2>Skills</h2><div class="grid"><div class="card"><h3>Mathematical & Statistical Tools</h3><p>LaTeX, Maple, Microsoft Office</p></div><div class="card"><h3>Research Skills</h3><p>Harmonic Analysis, Theory of Function Spaces, Grand Function Spaces, Weighted Norm Inequalities, Complex Interpolation</p></div><div class="card"><h3>Languages</h3><p>English: Fluent<br>Urdu: Native</p></div></div></section>
-<section id="contact" class="section-light"><h2>Contact</h2><div class="contact-box"><p><strong>Email:</strong> <a href="mailto:asadzaighum@gmail.com">asadzaighum@gmail.com</a></p><p><strong>Academic Email:</strong> <a href="mailto:asad.zaighum@riphah.edu.pk">asad.zaighum@riphah.edu.pk</a> and <a href="mailto:m.asad_zaighum@hw.ac.uk">m.asad_zaighum@hw.ac.uk</a></p><p><strong>Location:</strong> Aktobe, Kazakhstan</p><p><strong>ORCID:</strong> <a href="https://orcid.org/0000-0003-2677-1957" target="_blank">0000-0003-2677-1957</a></p><p><strong>Google Scholar:</strong> <a href="https://scholar.google.com.pk/citations?user=3chi74IAAAAJ&hl=en" target="_blank">View Profile</a></p><p><strong>Scopus Author ID:</strong> <a href="https://www.scopus.com/authid/detail.uri?authorId=55507494500" target="_blank">55507494500</a></p><p><strong>Web of Science Researcher ID:</strong> <a href="https://www.webofscience.com/wos/author/record/I-8235-2012" target="_blank">I-8235-2012</a></p></div></section>
-<footer><p>© 2026 Dr. Muhammad Asad Zaighum | Academic Portfolio</p></footer>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <div class="grid">
+    <div class="card">Harmonic Analysis</div>
+    <div class="card">Function Spaces</div>
+    <div class="card">Operator Theory</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div class="card">
+    <strong>Associate Professor</strong><br>
+    Heriot-Watt International Faculty, Kazakhstan
+  </div>
+
+  <div class="card">
+    <strong>Postdoctoral Researcher</strong><br>
+    Nazarbayev University
+  </div>
+
+  <div class="card">
+    <strong>Head of Department</strong><br>
+    Riphah International University
+  </div>
+
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+
+  <div class="publication">
+    <a href="https://www.degruyterbrill.com/document/doi/10.1515/gmj-2026-2017/html">
+    Generalized potential operators in weighted grand Herz spaces</a>
+  </div>
+
+  <div class="publication">
+    <a href="https://dergipark.org.tr/en/download/article-file/4943722">
+    On the boundedness of Riesz potential operators: insights from net spaces</a>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-box">
+    <p><strong>Email:</strong> asadzaighum@gmail.com</p>
+    <p><strong>Academic Email:</strong> asad.zaighum@riphah.edu.pk and m.asad_zaighum@hw.ac.uk</p>
+    <p><strong>Location:</strong> Aktobe, Kazakhstan</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Dr. Muhammad Asad Zaighum
+</footer>
+
 </body>
 </html>
