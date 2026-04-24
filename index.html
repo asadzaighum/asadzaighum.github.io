@@ -1,163 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Muhammad Asad Zaighum</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Muhammad Asad Zaighum | Academic Portfolio</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #1f2933;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2933;
+      background: #ffffff;
+    }
 
-header {
-  background: #0b3c5d;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
+    header {
+      background: linear-gradient(135deg, #0b2545, #134e6f);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 40px;
-}
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
 
-header p {
-  font-size: 18px;
-  max-width: 700px;
-  margin: 15px auto;
-}
+    header h2 {
+      font-weight: normal;
+      margin-bottom: 20px;
+      color: #dbeafe;
+    }
 
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+    header p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 18px;
+    }
 
-h2 {
-  color: #0b3c5d;
-}
+    nav {
+      background: #081c35;
+      text-align: center;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.columns {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
 
-.box {
-  flex: 1;
-  background: #f4f6f8;
-  padding: 20px;
-  border-radius: 8px;
-}
+    nav a:hover {
+      color: #facc15;
+    }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
 
-th, td {
-  padding: 12px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
+    h2 {
+      color: #0b2545;
+      border-bottom: 3px solid #0f766e;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+    }
 
-th {
-  background: #0b3c5d;
-  color: white;
-}
+    h3 {
+      color: #134e6f;
+    }
 
-footer {
-  background: #0b3c5d;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8fafc;
+      padding: 22px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-left: 5px solid #0f766e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th {
+      background: #0b2545;
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .publication {
+      background: #f8fafc;
+      padding: 18px;
+      margin-bottom: 14px;
+      border-left: 5px solid #d97706;
+      border-radius: 8px;
+    }
+
+    .job {
+      margin-bottom: 25px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .date {
+      color: #64748b;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d97706;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #b45309;
+    }
+
+    footer {
+      background: #081c35;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0f766e;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
   <h1>Dr. Muhammad Asad Zaighum</h1>
-  <p>Mathematician | Researcher | Academic Leader</p>
+  <h2>Mathematician | Researcher | Associate Professor</h2>
   <p>
-    My research focuses on harmonic analysis within functional analysis and the theory of function spaces. 
-    I bring nearly a decade of university-level teaching experience, international publications, 
-    and academic leadership as a department chair.
+    My research lies at the intersection of harmonic analysis and functional analysis,
+    with a particular focus on analysis associated with non-standard function spaces.
+    I have nearly a decade of university-level teaching experience, an active research profile,
+    graduate supervision experience, and academic leadership experience as a department chair.
   </p>
+
+  <br>
+
+  <a class="button" href="#publications">View Publications</a>
+  <a class="button" href="#contact">Contact</a>
+  <a class="button" href="CV_M_A_Zaighum.pdf">Download CV</a>
 </header>
 
-<section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#experience">Experience</a>
+  <a href="#publications">Publications</a>
+  <a href="#teaching">Supervision</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
   <h2>About</h2>
-  <div class="columns">
-    <div class="box">
-      <h3>Research</h3>
-      <p>Harmonic Analysis, Functional Analysis, Function Spaces</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Research Profile</h3>
+      <p>
+        My research focuses on harmonic analysis, functional analysis,
+        theory of function spaces, grand function spaces, weighted norm inequalities,
+        and complex interpolation.
+      </p>
     </div>
-    <div class="box">
-      <h3>Teaching</h3>
-      <p>Nearly a decade of university teaching experience in mathematics.</p>
+
+    <div class="card">
+      <h3>Academic Leadership</h3>
+      <p>
+        I have served as Head of Department of Mathematics and Statistics at
+        Riphah International University, gaining experience in academic management,
+        curriculum development, and institutional leadership.
+      </p>
     </div>
-    <div class="box">
-      <h3>Leadership</h3>
-      <p>Department chair experience with academic management and curriculum development.</p>
+
+    <div class="card">
+      <h3>Teaching & Mentoring</h3>
+      <p>
+        I have taught undergraduate and postgraduate mathematics courses and supervised
+        Ph.D. and M.Phil. students in mathematics.
+      </p>
     </div>
   </div>
 </section>
 
-<section>
+<section id="research">
+  <h2>Research Interests</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Harmonic Analysis</h3>
+      <p>Riesz potential operators, Marcinkiewicz integrals, Calderón-Zygmund operators, and related boundedness problems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Function Spaces</h3>
+      <p>Variable exponent spaces, Herz spaces, Hardy spaces, Morrey spaces, grand function spaces, and net spaces.</p>
+    </div>
+
+    <div class="card">
+      <h3>Operator Theory</h3>
+      <p>Kernel operators, maximal operators, potential operators, interpolation theory, and weighted inequalities.</p>
+    </div>
+  </div>
+</section>
+
+<section id="metrics">
   <h2>Research Metrics</h2>
+
   <table>
     <tr>
       <th>Metric</th>
-      <th>Google Scholar</th>
       <th>Scopus</th>
       <th>Web of Science</th>
     </tr>
     <tr>
-      <td>Citations</td>
-      <td>331</td>
-      <td>XX</td>
-      <td>XX</td>
+      <td>Indexed Articles</td>
+      <td>34</td>
+      <td>31</td>
     </tr>
     <tr>
       <td>h-index</td>
-      <td>12</td>
-      <td>XX</td>
-      <td>XX</td>
-    </tr>
-    <tr>
-      <td>i10-index</td>
-      <td>13</td>
-      <td>--</td>
-      <td>--</td>
+      <td>11</td>
+      <td>10</td>
     </tr>
   </table>
+
+  <p><em>Updated April 2026</em></p>
 </section>
 
-<section>
-  <h2>Publications</h2>
+<section id="education">
+  <h2>Academic Qualifications</h2>
+
+  <div class="job">
+    <h3>Ph.D. in Mathematics</h3>
+    <p class="date">2009 – 2014</p>
+    <p>
+      Abdus Salam School of Mathematical Sciences, Government College University Lahore,
+      Lahore, Pakistan.
+    </p>
+    <p>
+      <strong>Dissertation:</strong> Kernel Operators in Some New Function Spaces<br>
+      <strong>Advisor:</strong> Professor Alexander Meskhi
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>BS Mathematics</h3>
+    <p class="date">2005 – 2009</p>
+    <p>
+      COMSATS Institute of Information and Technology, Islamabad, Pakistan.
+    </p>
+    <p>
+      <strong>Project:</strong> Perturbation Methods in Physiological Flows<br>
+      <strong>Advisor:</strong> Professor Saleem Asghar
+    </p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <h3>Associate Professor</h3>
+    <p class="date">December 2025 – Present</p>
+    <p>
+      Heriot-Watt International Faculty, K. Zhubanov Aktobe Regional University,
+      Aktobe, Kazakhstan.
+    </p>
+    <p>
+      Teaching mathematics at Global College, Heriot-Watt University,
+      foundation-level Mathematics course.
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>Postdoctoral Research Assistant</h3>
+    <p class="date">August 2024 – December 2025</p>
+    <p>Nazarbayev University, Astana, Kazakhstan.</p>
+    <p>
+      Conducting research under the project
+      “Qualitative analysis for nonlocal and fractional models.”
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>Head of Department, Mathematics and Statistics</h3>
+    <p class="date">September 2020 – On Leave Since August 2024</p>
+    <p>Riphah International University, Islamabad, Pakistan.</p>
+    <p>
+      Oversaw departmental operations, curriculum development,
+      academic programs, and faculty coordination.
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>Associate Professor, Mathematics and Statistics</h3>
+    <p class="date">September 2018 – On Leave Since August 2024</p>
+    <p>Riphah International University, Islamabad, Pakistan.</p>
+    <p>
+      Taught undergraduate and postgraduate courses and supervised Ph.D. and M.Phil. students.
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>Postdoctoral Investigator</h3>
+    <p class="date">May 2015 – February 2016</p>
+    <p>Pontificia Universidad Javeriana, Bogota, Colombia.</p>
+    <p>
+      Conducted research with Professor Humberto Rafeiro on boundedness of operators
+      in generalized Morrey spaces.
+    </p>
+  </div>
+
+  <div class="job">
+    <h3>Assistant Professor, Mathematics and Statistics</h3>
+    <p class="date">April 2014 – August 2018</p>
+    <p>Riphah International University, Islamabad, Pakistan.</p>
+    <p>
+      Developed and taught undergraduate and graduate mathematics courses and supervised student research.
+    </p>
+  </div>
+</section>
+
+<section id="honors">
+  <h2>Honors and Awards</h2>
+
+  <ul>
+    <li><strong>Research Performance Prize</strong>, Abdus Salam School of Mathematical Sciences, GCU Lahore, November 2013.</li>
+    <li><strong>First Prize, Young Speaker</strong>, 6th World Conference on 21st Century Mathematics, March 2013.</li>
+    <li><strong>Award for Commendable Performance</strong>, Abdus Salam School of Mathematical Sciences, November 2010.</li>
+    <li><strong>Chancellor’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</li>
+    <li><strong>Institute’s Gold Medal</strong>, COMSATS Institute of Information and Technology, Islamabad, 2009.</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Research Supervision</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Ph.D. Supervision</h3>
+      <p><strong>Completed:</strong> 6</p>
+      <p><strong>Ongoing:</strong> 1</p>
+      <p>
+        Supervised Ph.D. students in Geometric Function Theory,
+        Harmonic Analysis, and variable exponent function spaces.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>M.Phil. Supervision</h3>
+      <p><strong>Completed:</strong> 35</p>
+      <p><strong>Ongoing:</strong> 0</p>
+      <p>
+        Supervised M.Phil. students in advanced topics in function space theory.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+
+  <div class="publication">
+    <strong>Orazbayev, A., & Zaighum, M. A. (2025).</strong>
+    Generalized potential operators in weighted grand Herz spaces.
+    <em>Georgian Mathematical Journal</em>. Impact Factor 0.7. [Scopus]
+  </div>
+
+  <div class="publication">
+    <strong>Nursultanov, E., Suragan, D., & Zaighum, M. A. (2025).</strong>
+    On the boundedness of Riesz potential operators: insights from net spaces.
+    <em>Constructive Mathematical Analysis</em>. Impact Factor 1.8. [Scopus]
+  </div>
+
+  <div class="publication">
+    <strong>Tulendinova, A., Ghorbanalizadeh, A., & Zaighum, M. A. (2025).</strong>
+    On Grand Morrey Sequence Spaces.
+    <em>Journal of Pseudo-Differential Operators and Applications</em>.
+    Impact Factor 1.3. [Scopus]
+  </div>
+
+  <div class="publication">
+    <strong>Shabbir, F., & Zaighum, M. A. (2024).</strong>
+    On the Boundedness of Sublinear Operators on Grand Herz–Hardy Spaces with Variable Exponent.
+    <em>Mediterranean Journal of Mathematics</em>, 21(2), 51.
+    Impact Factor 1.2. [Scopus]
+  </div>
+
+  <div class="publication">
+    <strong>Nafis, H., Rafeiro, H., & Zaighum, M. A. (2022).</strong>
+    Boundedness of Multilinear Calderón-Zygmund Operators on Grand Variable Herz Spaces.
+    <em>Journal of Function Spaces</em>, Article ID 4845507.
+    Impact Factor 1.281. [Scopus]
+  </div>
+
+  <div class="publication">
+    <strong>Meskhi, A., Rafeiro, H., & Zaighum, M. A. (2016).</strong>
+    Interpolation on variable Morrey spaces defined on quasi-metric measure spaces.
+    <em>Journal of Functional Analysis</em>, 270(10), 3946–3961.
+    Impact Factor 1.637. [Scopus]
+  </div>
+
   <p>
-    <strong>On the boundedness of Riesz potential operators in variable exponent spaces</strong><br>
-    Georgian Mathematical Journal (2026)<br>
-    <a href="https://doi.org/10.1515/gmj-2026-2017">DOI Link</a>
+    <a href="CV_M_A_Zaighum.pdf">See full publication list in CV</a>
   </p>
 </section>
 
-<section>
-  <h2>Teaching</h2>
-  <p>
-    Courses taught include Real Analysis, Functional Analysis, Linear Algebra, and Complex Analysis.
-  </p>
+<section id="conferences">
+  <h2>Selected Conferences and Talks</h2>
+
+  <ul>
+    <li>
+      <strong>15th ISAAC Congress</strong>, Nazarbayev University, Astana, Kazakhstan, July 2025.
+      Talk: “Hardy-Littlewood Sobolev theorem on net spaces.”
+    </li>
+    <li>
+      <strong>Traditional International April Mathematical Conference</strong>, Almaty, Kazakhstan, April 2025.
+      Plenary talk: “Grand Net Spaces and Application.”
+    </li>
+    <li>
+      <strong>Conference on Actual Problems of Analysis, Differential Equations and Algebra</strong>, Astana, Kazakhstan, January 2025.
+      Talk: “On a Generalization of Net Spaces.”
+    </li>
+    <li>
+      <strong>ICOMET 2023</strong>, IBA Sukkur, March 2023.
+      Keynote Speaker.
+    </li>
+    <li>
+      <strong>Winter Workshop on Mathematical Sciences</strong>, ASSMS Lahore, Pakistan, December 2017.
+      Invited Speaker.
+    </li>
+  </ul>
 </section>
 
-<section>
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Mathematical Tools</h3>
+      <p>LaTeX, Maple, Microsoft Office</p>
+    </div>
+
+    <div class="card">
+      <h3>Research Skills</h3>
+      <p>
+        Harmonic Analysis, Function Spaces, Grand Function Spaces,
+        Weighted Norm Inequalities, Complex Interpolation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Languages</h3>
+      <p>English: Fluent<br>Urdu: Native</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: asadzaighum@gmail.com</p>
+
+  <p><strong>Email:</strong> asadzaighum@gmail.com</p>
+  <p><strong>Academic Email:</strong> m.asad_zaighum@hw.ac.uk</p>
+  <p><strong>Institutional Email:</strong> asad.zaighum@riphah.edu.pk</p>
+  <p><strong>Location:</strong> Aktobe, Kazakhstan</p>
+  <p><strong>ORCID:</strong> 0000-0003-2677-1957</p>
+  <p><strong>Scopus Author ID:</strong> 55507494500</p>
+  <p><strong>Web of Science Researcher ID:</strong> I-8235-2012</p>
 </section>
 
 <footer>
