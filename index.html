@@ -413,12 +413,62 @@ footer{
   .network-map{transform:scale(.76);transform-origin:top center;height:330px}
   .about-section{padding:0 20px 36px}
 }
+
+/* === Subtle Animated Chalkboard Equations === */
+.math-float-layer{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:1;
+}
+.math-float{
+  position:absolute;
+  color:rgba(255,255,255,.16);
+  font-family:"Times New Roman",serif;
+  font-style:italic;
+  font-weight:600;
+  white-space:nowrap;
+  text-shadow:0 0 8px rgba(255,255,255,.08);
+  animation:chalkDrift linear infinite;
+}
+.math-float.gold{
+  color:rgba(224,167,43,.20);
+}
+.mf1{left:6%; top:11%; font-size:34px; animation-duration:24s;}
+.mf2{left:18%; top:34%; font-size:27px; animation-duration:30s; animation-delay:-8s;}
+.mf3{left:37%; top:18%; font-size:32px; animation-duration:28s; animation-delay:-14s;}
+.mf4{left:9%; top:67%; font-size:29px; animation-duration:32s; animation-delay:-18s;}
+.mf5{left:49%; top:57%; font-size:30px; animation-duration:26s; animation-delay:-5s;}
+.mf6{left:67%; top:22%; font-size:25px; animation-duration:34s; animation-delay:-22s;}
+@keyframes chalkDrift{
+  0%{transform:translate3d(0,0,0) rotate(0deg); opacity:.06;}
+  20%{opacity:.20;}
+  50%{transform:translate3d(34px,-18px,0) rotate(.4deg); opacity:.16;}
+  80%{opacity:.22;}
+  100%{transform:translate3d(72px,-34px,0) rotate(.8deg); opacity:.06;}
+}
+.hero-content,
+.hero-inner{
+  position:relative;
+  z-index:2;
+}
+
 </style>
 </head>
 
 <body>
 
 <header class="hero" id="home">
+  <div class="math-float-layer" aria-hidden="true">
+    <div class="math-float mf1">Iα f(x)=∫ℝⁿ f(y)/|x−y|ⁿ⁻ᵅ dy</div>
+    <div class="math-float mf2">N^{p,q}(ω)  —  Net Spaces</div>
+    <div class="math-float mf3">||Iα f||_{Lq(w)} ≤ C ||f||_{Lp(wp)}</div>
+    <div class="math-float mf4">K_q^{α,p}(w₁,w₂)</div>
+    <div class="math-float mf5 gold">Stay Hungry · Stay Curious</div>
+    <div class="math-float mf6">0 &lt; α &lt; n, 1 &lt; p &lt; q &lt; ∞</div>
+  </div>
+
   <div class="hero-content">
     <div class="hero-text">
       <div class="hero-kicker">DR.</div>
