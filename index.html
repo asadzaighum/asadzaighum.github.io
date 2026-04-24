@@ -454,6 +454,113 @@ footer{
   z-index:2;
 }
 
+
+/* === Co-author network spacing fix === */
+.network-map{
+  width:460px !important;
+  height:460px !important;
+}
+.center-node{
+  left:167px !important;
+  top:167px !important;
+}
+.n1{left:192px !important; top:8px !important;}      /* H. Nafis */
+.n2{left:330px !important; top:70px !important;}     /* A. Meskhi */
+.n3{left:372px !important; top:205px !important;}    /* E. Nursultanov */
+.n4{left:330px !important; top:330px !important;}    /* H. Rafeiro */
+.n5{left:192px !important; top:378px !important;}    /* F. Shabbir */
+.n6{left:60px !important; top:330px !important;}     /* D. Suragan or remaining node */
+.n7{left:6px !important; top:205px !important;}      /* A. Ghorbanalizadeh */
+.n8{left:60px !important; top:70px !important;}      /* A. Orazbayev */
+.n9{left:92px !important; top:382px !important;}     /* extra lower-left if present */
+.n10{left:382px !important; top:70px !important;}    /* V. Kokilashvili moved away from Nursultanov */
+@media(max-width:760px){
+  .network-map{
+    transform:scale(.72) !important;
+    transform-origin:top center !important;
+    height:340px !important;
+  }
+}
+
+
+/* === Symmetric proportional co-author network === */
+.network-map{
+  width:500px !important;
+  height:500px !important;
+  margin:0 auto !important;
+  position:relative !important;
+}
+.network-map svg{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+}
+.node{
+  position:absolute !important;
+  border-radius:50% !important;
+  color:white !important;
+  background:radial-gradient(circle at 30% 22%,#1b9aa6,#07505d 74%) !important;
+  box-shadow:0 9px 18px rgba(0,0,0,.30) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  font-weight:900 !important;
+  line-height:1.08 !important;
+  padding:7px !important;
+  animation:float 4.5s ease-in-out infinite !important;
+  overflow:visible !important;
+  word-break:normal !important;
+}
+.center-node{
+  width:126px !important;
+  height:126px !important;
+  left:187px !important;
+  top:187px !important;
+  z-index:5 !important;
+  background:radial-gradient(circle at 34% 24%,#f7c85d 0%,#d99408 78%) !important;
+  font-size:17px !important;
+}
+
+/* proportional sizes: larger = more repeated collaboration */
+.n1{width:82px !important;height:82px !important;left:209px !important;top:20px !important;font-size:13px !important;}    /* H. Nafis */
+.n2{width:88px !important;height:88px !important;left:336px !important;top:73px !important;font-size:13px !important;}    /* A. Meskhi */
+.n3{width:70px !important;height:70px !important;left:410px !important;top:215px !important;font-size:11px !important;}   /* E. Nursultanov */
+.n4{width:86px !important;height:86px !important;left:337px !important;top:340px !important;font-size:13px !important;}    /* H. Rafeiro */
+.n5{width:74px !important;height:74px !important;left:213px !important;top:410px !important;font-size:12px !important;}    /* F. Shabbir */
+.n6{width:68px !important;height:68px !important;left:86px !important;top:351px !important;font-size:11px !important;}     /* D. Suragan */
+.n7{width:68px !important;height:68px !important;left:20px !important;top:216px !important;font-size:10px !important;}     /* A. Ghorbanalizadeh */
+.n8{width:68px !important;height:68px !important;left:86px !important;top:80px !important;font-size:11px !important;}      /* A. Orazbayev */
+.n9{width:68px !important;height:68px !important;left:209px !important;top:410px !important;font-size:10px !important;display:none !important;} 
+.n10{width:82px !important;height:82px !important;left:80px !important;top:70px !important;font-size:11px !important;}     /* V. Kokilashvili */
+
+.ring{
+  left:171px !important;
+  top:171px !important;
+  width:158px !important;
+  height:158px !important;
+}
+
+@media(max-width:760px){
+  .network-map{
+    transform:scale(.70) !important;
+    transform-origin:top center !important;
+    height:350px !important;
+  }
+}
+
+
+/* exact circular node positions */
+.n1{left:209px !important;top:21px !important;}
+.n2{left:327px !important;top:62px !important;}
+.n3{left:400px !important;top:182px !important;}
+.n4{left:370px !important;top:301px !important;}
+.n5{left:277px !important;top:390px !important;}
+.n6{left:152px !important;top:393px !important;}
+.n7{left:53px !important;top:310px !important;}
+.n8{left:31px !important;top:183px !important;}
+.n10{left:88px !important;top:65px !important;}
 </style>
 </head>
 
@@ -523,24 +630,33 @@ footer{
   <div class="network-box" id="coauthors">
     <h2 class="block-title"><span class="title-icon">♙</span> Co-author Network</h2>
     <div class="network-map">
-      <svg viewBox="0 0 430 430">
-        <g stroke="#b9c7d6" stroke-width="1.35" opacity=".9">
-          <line x1="215" y1="215" x2="215" y2="48"/>
-          <line x1="215" y1="215" x2="352" y2="104"/>
-          <line x1="215" y1="215" x2="388" y2="225"/>
-          <line x1="215" y1="215" x2="352" y2="342"/>
-          <line x1="215" y1="215" x2="215" y2="390"/>
-          <line x1="215" y1="215" x2="90" y2="342"/>
-          <line x1="215" y1="215" x2="42" y2="225"/>
-          <line x1="215" y1="215" x2="90" y2="104"/>
-          <line x1="90" y1="104" x2="352" y2="104"/>
-          <line x1="42" y1="225" x2="388" y2="225"/>
-          <line x1="90" y1="342" x2="352" y2="342"/>
-          <line x1="215" y1="48" x2="215" y2="390"/>
-          <line x1="90" y1="104" x2="352" y2="342"/>
-          <line x1="352" y1="104" x2="90" y2="342"/>
-        </g>
-      </svg>
+      <svg viewBox="0 0 500 500"><g stroke="#b9c7d6" stroke-width="1.25" opacity=".78"><line x1="250" y1="250" x2="250.0" y2="62.0"/>
+<line x1="250" y1="250" x2="370.8" y2="106.0"/>
+<line x1="250" y1="250" x2="435.1" y2="217.4"/>
+<line x1="250" y1="250" x2="412.8" y2="344.0"/>
+<line x1="250" y1="250" x2="314.3" y2="426.7"/>
+<line x1="250" y1="250" x2="185.7" y2="426.7"/>
+<line x1="250" y1="250" x2="87.2" y2="344.0"/>
+<line x1="250" y1="250" x2="64.9" y2="217.4"/>
+<line x1="250" y1="250" x2="129.2" y2="106.0"/>
+<line x1="250.0" y1="62.0" x2="370.8" y2="106.0"/>
+<line x1="370.8" y1="106.0" x2="435.1" y2="217.4"/>
+<line x1="435.1" y1="217.4" x2="412.8" y2="344.0"/>
+<line x1="412.8" y1="344.0" x2="314.3" y2="426.7"/>
+<line x1="314.3" y1="426.7" x2="185.7" y2="426.7"/>
+<line x1="185.7" y1="426.7" x2="87.2" y2="344.0"/>
+<line x1="87.2" y1="344.0" x2="64.9" y2="217.4"/>
+<line x1="64.9" y1="217.4" x2="129.2" y2="106.0"/>
+<line x1="129.2" y1="106.0" x2="250.0" y2="62.0"/>
+<line x1="250.0" y1="62.0" x2="412.8" y2="344.0"/>
+<line x1="370.8" y1="106.0" x2="314.3" y2="426.7"/>
+<line x1="435.1" y1="217.4" x2="185.7" y2="426.7"/>
+<line x1="412.8" y1="344.0" x2="87.2" y2="344.0"/>
+<line x1="314.3" y1="426.7" x2="64.9" y2="217.4"/>
+<line x1="185.7" y1="426.7" x2="129.2" y2="106.0"/>
+<line x1="87.2" y1="344.0" x2="250.0" y2="62.0"/>
+<line x1="64.9" y1="217.4" x2="370.8" y2="106.0"/>
+<line x1="129.2" y1="106.0" x2="435.1" y2="217.4"/></g></svg>
       <div class="ring"></div>
       <div class="node center-node">Muhammad<br>Asad<br>Zaighum</div>
       <div class="node n1">H.<br>Nafis</div>
@@ -608,7 +724,7 @@ footer{
   <div class="pub-card"><a href="https://zhubanov.edu.kz/en/campus_hw/category/4/" target="_blank">Heriot-Watt International Faculty, K. Zhubanov Aktobe Regional University</a><br><strong>Associate Professor</strong> | December 2025 – Present | Aktobe, Kazakhstan</div>
   <div class="pub-card"><a href="https://nu.edu.kz" target="_blank">Nazarbayev University</a><br><strong>Postdoctoral Research Assistant</strong> | August 2024 – December 2025 | Astana, Kazakhstan</div>
   <div class="pub-card"><a href="https://riphah.edu.pk" target="_blank">Riphah International University</a><br><strong>Head of Department, Mathematics and Statistics</strong> | September 2020 – On Leave Since August 2024</div>
-  <div class="pub-card"><a href="https://riphah.edu.pk/faculty/profile/?id=737" target="_blank">Riphah International University</a><br><strong>Associate Professor, Mathematics and Statistics</strong> | September 2018 – On Leave Since August 2024</div>
+  <div class="pub-card"><a href="https://riphah.edu.pk/faculty/profile/?id=737" target="_blank">Riphah International University Faculty Profile</a><br><strong>Associate Professor, Mathematics and Statistics</strong> | September 2018 – On Leave Since August 2024</div>
   <div class="pub-card"><a href="https://www.javeriana.edu.co/inicio" target="_blank">Pontificia Universidad Javeriana</a><br><strong>Postdoctoral Investigator</strong> | May 2015 – February 2016 | Bogota, Colombia</div>
 </section>
 
