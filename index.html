@@ -912,6 +912,31 @@ body{
   }
 }
 
+
+/* === Typed animation for hero statement only === */
+.typed-paragraph{
+  min-height:86px;
+}
+#typed-text{
+  color:#ffffff;
+}
+.typed-cursor{
+  display:inline-block;
+  margin-left:4px;
+  color:var(--gold-light);
+  font-weight:900;
+  animation:typedBlink 1s infinite;
+}
+@keyframes typedBlink{
+  0%,45%,100%{opacity:1}
+  55%,90%{opacity:0}
+}
+@media(max-width:760px){
+  .typed-paragraph{
+    min-height:118px;
+  }
+}
+
 </style>
 </head>
 
@@ -932,9 +957,8 @@ body{
       <div class="hero-kicker">DR.</div>
       <h1>Muhammad Asad Zaighum</h1>
       <div class="hero-role">Mathematician | Researcher | Educator</div>
-      <p>
-        I work in harmonic analysis and functional analysis with special interest in
-        non-standard function spaces, weighted normed inequalities, and aggrandized function spaces.
+      <p class="typed-paragraph">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
       </p>
       <div class="hero-buttons">
         <a class="btn btn-gold" href="#publications">▣ View Publications</a>
@@ -1169,6 +1193,46 @@ body{
 <footer>
   © 2026 Dr. Muhammad Asad Zaighum | Academic Portfolio
 </footer>
+
+
+<script>
+(function(){
+  const el = document.getElementById("typed-text");
+  if(!el) return;
+
+  const text = "I work in harmonic analysis and functional analysis with special interest in non-standard function spaces, weighted normed inequalities, and aggrandized function spaces.";
+  let i = 0;
+  let deleting = false;
+
+  function typeLoop(){
+    if(!deleting){
+      i++;
+      el.textContent = text.slice(0, i);
+
+      if(i === text.length){
+        deleting = true;
+        setTimeout(typeLoop, 2400);
+        return;
+      }
+
+      setTimeout(typeLoop, 34 + Math.random() * 18);
+    }else{
+      i--;
+      el.textContent = text.slice(0, i);
+
+      if(i === 0){
+        deleting = false;
+        setTimeout(typeLoop, 650);
+        return;
+      }
+
+      setTimeout(typeLoop, 18);
+    }
+  }
+
+  setTimeout(typeLoop, 650);
+})();
+</script>
 
 </body>
 </html>
