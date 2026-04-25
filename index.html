@@ -641,6 +641,277 @@ footer{
   padding:8px !important;
 }
 
+
+/* ================================================= */
+/* FINAL RESPONSIVE OPTIMIZATION FOR MOBILE + TABLET */
+/* ================================================= */
+
+body{
+  overflow-x:hidden;
+}
+
+@media (max-width: 1100px){
+  .top-grid{
+    grid-template-columns:1fr;
+    gap:38px;
+    padding:34px 28px 0;
+  }
+
+  .network-box{
+    max-width:620px;
+    margin:0 auto;
+  }
+
+  .about-section{
+    grid-template-columns:1fr;
+    padding:0 28px 42px;
+  }
+
+  .hero-content{
+    padding:0 34px;
+  }
+
+  .hero-text{
+    width:56%;
+    min-width:360px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .hero{
+    height:auto;
+    min-height:520px;
+    background-position:center top;
+  }
+
+  .hero-content{
+    min-height:520px;
+    padding:36px 22px;
+    align-items:flex-end;
+  }
+
+  .hero-text{
+    width:100%;
+    min-width:0;
+    padding-top:0;
+  }
+
+  .hero-kicker{
+    font-size:20px;
+  }
+
+  .hero h1{
+    font-size:32px;
+    line-height:1.12;
+  }
+
+  .hero-role{
+    font-size:15px;
+    margin-bottom:14px;
+  }
+
+  .hero p{
+    font-size:14.5px;
+    max-width:100%;
+  }
+
+  .hero-buttons{
+    gap:10px;
+  }
+
+  .btn{
+    padding:11px 16px;
+    font-size:13px;
+  }
+
+  .math-float{
+    font-size:18px !important;
+    opacity:.55;
+  }
+
+  .navbar{
+    height:auto;
+  }
+
+  .nav-inner{
+    flex-wrap:wrap;
+    gap:0;
+    padding:8px 6px;
+  }
+
+  .nav-inner a{
+    line-height:1.2;
+    padding:9px 10px;
+    font-size:11px;
+    letter-spacing:.8px;
+  }
+
+  .top-grid{
+    padding:28px 18px 0;
+  }
+
+  .block-title{
+    font-size:18px;
+  }
+
+  .metrics{
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+  .metric-card{
+    height:96px;
+  }
+
+  .metric-card .number{
+    font-size:28px;
+  }
+
+  .metric-card .label{
+    font-size:13px;
+  }
+
+  .interests li{
+    font-size:14px;
+    margin:13px 0;
+  }
+
+  .network-box{
+    min-height:390px;
+    overflow:hidden;
+  }
+
+  .network-map{
+    transform:scale(.68) !important;
+    transform-origin:top center !important;
+    height:350px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .node{
+    font-size:9px !important;
+    padding:5px !important;
+  }
+
+  .center-node{
+    font-size:12px !important;
+  }
+
+  .n7{
+    font-size:8.5px !important;
+  }
+
+  .about-section{
+    padding:0 18px 34px;
+  }
+
+  .about-card{
+    padding:22px 20px;
+    border-radius:0 18px 0 0;
+  }
+
+  .about-card p{
+    font-size:14.5px;
+  }
+
+  .side-card{
+    padding:18px;
+  }
+
+  .content-section{
+    padding:44px 18px;
+  }
+
+  .content-section h2{
+    font-size:24px;
+  }
+
+  .card-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-card,
+  .pub-card{
+    padding:18px;
+    font-size:14px;
+  }
+
+  .pub-card{
+    word-break:normal;
+    overflow-wrap:anywhere;
+  }
+
+  .contact-card{
+    padding:24px 18px;
+    font-size:14px;
+  }
+
+  footer{
+    padding:22px 14px;
+    font-size:13px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .hero{
+    min-height:470px;
+  }
+
+  .hero-content{
+    min-height:470px;
+    padding:30px 16px;
+  }
+
+  .hero h1{
+    font-size:27px;
+  }
+
+  .hero-role{
+    font-size:14px;
+  }
+
+  .hero p{
+    font-size:13.5px;
+  }
+
+  .btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .metrics{
+    grid-template-columns:1fr;
+  }
+
+  .metric-card{
+    height:88px;
+  }
+
+  .network-box{
+    min-height:330px;
+  }
+
+  .network-map{
+    transform:scale(.55) !important;
+    height:285px !important;
+  }
+
+  .block-title{
+    font-size:16px;
+  }
+
+  .content-section h2{
+    font-size:22px;
+  }
+
+  .math-float{
+    display:none;
+  }
+}
+
 </style>
 </head>
 
