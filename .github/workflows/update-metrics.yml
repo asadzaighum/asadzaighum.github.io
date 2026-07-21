@@ -1,1 +1,45 @@
+name: Update research metrics
 
+# Runs every Monday at 06:00 UTC, and can be triggered by hand from the
+# Actions tab ("Run workflow").
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch metrics and update index.html
+        env:
+          SCOPUS_API_KEY:    ${{ secrets.SCOPUS_API_KEY }}
+          SCOPUS_AUTHOR_ID:  ${{ secrets.SCOPUS_AUTHOR_ID }}
+          SCOPUS_INST_TOKEN: ${{ secrets.SCOPUS_INST_TOKEN }}
+          WOS_API_KEY:       ${{ secrets.WOS_API_KEY }}
+          WOS_AUTHOR_ID:     ${{ secrets.WOS_AUTHOR_ID }}
+          WOS_H_INDEX:       ${{ secrets.WOS_H_INDEX }}
+        run: python update_metrics.py
+
+      - name: Commit changes if the numbers moved
+        run: |
+          git config user.name  "metrics-bot"
+          git config user.email "metrics-bot@users.noreply.github.com"
+          if ! git diff --quiet -- index.html; then
+            git add index.html
+            git commit -m "Auto-update research metrics"
+            git push
+          else
+            echo "No changes to commit."
+          fi
