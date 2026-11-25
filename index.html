@@ -408,63 +408,22 @@ footer .accent{color:var(--gold-light);font-weight:600}
   .hero-buttons{width:100%}
 }
 
-/* Research dashboard redesign */
-[hidden]{display:none!important} [id]{scroll-margin-top:100px}
-.hero,.hero-content{min-height:540px}.hero-content{padding-top:80px;padding-bottom:72px}.hero-inner{max-width:720px}.hero h1{font-size:clamp(38px,5.5vw,70px)}.hero:after{height:55px;opacity:.35}.affiliation{color:#dce8ee;font-size:15px;margin:0 0 12px}.motto{color:var(--gold-light);font-style:italic;margin:0 0 20px}.typed-paragraph{min-height:60px;margin-bottom:12px}.profile-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.profile-links a{border:1px solid #a7bcc980;border-radius:8px;padding:7px 12px;color:#fff;font-size:13px;background:#0a1e3350}.profile-links a:hover{border-color:var(--gold-light)}
-.nav-inner{align-items:center;gap:2px}.nav-inner a{padding:15px 13px;font-size:12px}.nav-inner a:after{bottom:7px}#themeToggle{background:transparent;color:#f2c85a;border:1px solid #ffffff55;border-radius:8px;font-size:20px;padding:2px 11px;cursor:pointer;margin:6px}
-.section{padding:44px 0}.metrics-shell{padding:32px 0 10px}.dashboard-metrics .metrics{grid-template-columns:repeat(6,minmax(0,1fr))}.metric-card{padding:20px 8px}.metric-card .number{font-size:34px}.metric-card .label{font-size:12px}.top-grid{grid-template-columns:1.35fr 1fr;gap:32px}.directions{display:grid;grid-template-columns:1fr 1fr;gap:14px}.directions article{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow-sm)}.directions h3{font-size:19px;margin:12px 0 5px;color:var(--navy)}.directions p{font-size:13px;color:var(--muted);margin:0}.formula{font-family:Georgia,serif;font-size:17px;color:var(--teal);min-height:48px;display:flex;align-items:center;justify-content:center;display:block;text-align:center;padding-top:10px}.section-head{margin-bottom:24px}.section.alt{background:var(--soft)}
-.dark{color-scheme:dark;--soft:#091727;--white:#142b40;--line:#29445a;--ink:#e2edf4;--muted:#a9c0d0;--panel:#203b50;--navy:#e0edf6;--teal:#6acbd1;--teal-light:#8adce0;--shadow-sm:0 2px 12px #0002;--shadow-md:0 12px 30px #0004}.dark .navbar,.dark footer{background:#0a1e33}.dark .pill:hover{color:#091727}.dark .about-card,.dark .contact-card{background:linear-gradient(135deg,#10283d,#164b59)}.dark .center-node{color:#0a1e33}.dark .info-card .years{color:#a0e6e8}.dark .metric-card .number{background:linear-gradient(135deg,#f2c85a,#e7b951);background-clip:text;-webkit-background-clip:text;color:transparent}
-@media(max-width:1000px){.dashboard-metrics .metrics{grid-template-columns:repeat(3,1fr)}.top-grid{grid-template-columns:1fr}.network-map{max-width:430px}}@media(max-width:600px){.hero,.hero-content{min-height:540px}.hero-content{padding:70px 22px 38px}.directions{grid-template-columns:1fr}.dashboard-metrics .metrics{grid-template-columns:repeat(2,1fr)}.nav-inner{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:0 10px}.nav-inner a{white-space:nowrap}.card-grid{grid-template-columns:minmax(0,1fr)}.section{padding:30px 0}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;scroll-behavior:auto!important}}
+:root{--navy:#171b1b;--navy2:#222927;--teal:#226d5b;--teal-light:#4b9a83;--gold:#b44d36;--gold-light:#d77960;--ink:#202522;--muted:#646963;--soft:#f7f5ef;--panel:#eaece5;--white:#fffdf8;--line:#deded6;--serif:"Inter",Arial,sans-serif;--radius:4px;--shadow-sm:none;--shadow-md:none;--shadow-lg:none}
+body{background:var(--soft)}h1,h2,h3{letter-spacing:-.045em} .wrap{max-width:1200px}.section{padding:105px 0;scroll-margin-top:80px}.section.alt{background:#eeeee6}.section-head{margin-bottom:48px}.section-head h2{font-size:clamp(36px,5vw,64px);font-weight:800;line-height:1.06}.section-head .kicker,.chapter{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--gold)}.section-head .rule{height:2px;width:70px;background:var(--gold)}
+.navbar{position:fixed;inset:0 0 auto;background:rgba(23,27,27,.91);box-shadow:none;border-bottom:1px solid #ffffff20;backdrop-filter:blur(14px)}.nav-inner{justify-content:space-between;align-items:center;flex-wrap:nowrap;padding:0 32px;min-height:70px}.nav-inner .brand{font-size:25px;font-weight:900;letter-spacing:-.08em;padding:12px 0;color:white}.brand span{color:var(--gold-light)}#navLinks{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:2px}.nav-inner a{font-size:11px;padding:20px 10px;letter-spacing:.06em}.nav-inner a:after{bottom:11px;left:10px;right:10px;background:var(--gold-light)}#menuToggle{display:none;color:white;background:none;border:1px solid #ffffff40;padding:8px 12px;border-radius:3px}#progress{height:2px;background:var(--gold-light);width:0}
+.hero{min-height:100svh;background:radial-gradient(ellipse at 76% 50%,#38483e 0%,#202a25 40%,#171b1b 75%);color:#fff;isolation:isolate}.hero:before,.hero:after{display:none}.hero-content{min-height:100svh;padding:145px 40px 100px;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;gap:55px;position:relative;z-index:2}.hero-inner{max-width:780px}.hero-eyebrow{background:none;border:0;border-radius:0;padding:0;color:#d77960;letter-spacing:.18em;margin-bottom:35px;font-size:11px}.intro{color:#d1d6cb;margin:0 0 8px;font-size:20px}.hero h1{font-size:clamp(45px,6.7vw,95px);font-weight:800;line-height:.99;letter-spacing:-.075em;text-shadow:none;margin-bottom:24px}.hero h1 .accent{background:none;color:#f0a18d}.hero-role{font-size:clamp(23px,3vw,36px);color:#e8eade;font-weight:400;margin-bottom:16px;min-height:55px}.hero-role span{padding:0}.hero-role span:after{content:"|";color:var(--gold-light);margin-left:6px;animation:blink 1s infinite}.typed-paragraph{font-size:15px;min-height:0;color:#c9d1c8;margin-bottom:32px;text-shadow:none}.btn{border-radius:3px;padding:14px 20px;font-size:13px}.btn-gold{background:#e48c76;color:#1c201e;box-shadow:none}.btn-outline{border:1px solid #ffffff60}.hero-portrait{margin:0;position:relative;max-width:340px;justify-self:center}.hero-portrait img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;border:1px solid #ffffff40;filter:saturate(.72);box-shadow:18px 18px 0 #ffffff12}.hero-portrait figcaption{font-size:10px;letter-spacing:.16em;margin-top:26px;color:#c1ccc1}.scroll-cue{position:absolute;bottom:27px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.18em;color:#d0d6d0;z-index:4}.scroll-cue span{display:inline-block;margin-left:8px;animation:float 2s infinite}#mathCanvas{position:absolute;inset:0;width:100%;height:100%;opacity:.43;pointer-events:none;z-index:0}
+.about-grid{grid-template-columns:1.7fr 1fr}.about-card{background:transparent;color:var(--ink);padding:0;border-radius:0;box-shadow:none}.about-card:before{display:none}.about-card h2{font-size:clamp(28px,3.2vw,42px);line-height:1.15}.about-card p{color:var(--ink);font-size:18px}.about-card .chapter{color:var(--gold);font-size:11px}.side-card{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;padding:18px 0;box-shadow:none}.pill{border-radius:3px;background:transparent}.impact,.manifesto{background:#1c2721;color:#f6f5ee;padding:95px 0}.impact h2{font-size:clamp(42px,6vw,76px);line-height:1;margin:20px 0 55px;font-weight:800}.impact .metrics{grid-template-columns:repeat(3,1fr);gap:0}.impact .metric-card{background:transparent;border:0;border-top:1px solid #ffffff33;border-radius:0;text-align:left;padding:24px 18px 30px 0}.impact .number{font-size:clamp(45px,6vw,76px);background:none;color:#f0a18d;letter-spacing:-.07em;font-weight:800}.impact .label,.impact .metrics-updated{color:#c6d0c6}.impact .metrics-updated span{color:#e48c76}.top-grid{grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}.interests li{background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;font-size:18px;padding:17px 0}.check,.panel-title .ico{background:none;color:var(--gold);border-radius:0}.panel-title{font-size:13px}.node{background:#226d5b;box-shadow:none}.center-node{background:#e48c76;color:#17201a;box-shadow:none}.ring{border-color:#b44d3650}
+.card-grid{gap:32px}.info-card{background:transparent;border:0;border-top:2px solid var(--ink);border-radius:0;padding:24px 0;box-shadow:none}.info-card:before{display:none}.info-card h3{font-size:25px;line-height:1.18}.info-card p{font-size:16px}.info-card .years{background:none;color:var(--gold);padding:0;letter-spacing:.07em}.timeline{padding:0;max-width:960px;margin:auto}.timeline:before{left:50%;width:1px;background:#b1b6ad}.tl-item{width:50%;padding:0 32px 24px 0;margin:0;position:relative}.tl-item:nth-child(even){margin-left:50%;padding:0 0 24px 32px}.tl-item:before{left:auto;right:-7px;top:24px;width:13px;height:13px;border:2px solid var(--gold);background:var(--soft);box-shadow:none}.tl-item:nth-child(even):before{left:-6px;right:auto}.tl-card{padding:18px 0;border:0;border-top:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}.tl-card .org{font-size:19px;line-height:1.35}.tl-card .meta{font-size:14px}.manifesto{background:linear-gradient(90deg,#19241eea,#19241eab),url('hero-banner-asad.png') center/cover fixed}.manifesto blockquote{margin:35px 0;font-size:clamp(38px,7vw,90px);letter-spacing:-.065em;font-weight:800;line-height:1.04}.manifesto .chapter{color:#f0a18d}.pub-card{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:20px 0;box-shadow:none}.pub-number{background:transparent;color:var(--gold);padding:5px 0}.pub-body{font-size:15px}.pub-search{border-radius:3px;background:transparent;box-shadow:none}.more{margin-top:25px;background:var(--ink);color:white}.contact-card{background:none;color:var(--ink);text-align:left;box-shadow:none;border-radius:0;padding:0}.contact-card:before{display:none}.contact-card h2{font-size:clamp(40px,6vw,70px);font-weight:800}.contact-card .sub{color:var(--muted)}.contact-rows{margin:0;max-width:none}.contact-row{border:0;border-top:1px solid var(--line);border-radius:0;background:none;justify-content:flex-start;padding:15px 0}.contact-row .k{color:var(--gold)}.contact-row a{color:var(--teal)}footer{background:#171b1b;color:#ccc}.reveal{opacity:0;transform:translateY(32px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}.hero-inner{animation:enter 1s both}.hero-portrait{animation:enter 1.15s .2s both}@keyframes enter{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){.hero-content{gap:26px}.nav-inner{padding:0 22px}#navLinks a{font-size:10px;padding:20px 6px}.top-grid{gap:35px}.about-grid{grid-template-columns:1fr 1fr}}@media(max-width:760px){.section,.impact,.manifesto{padding:65px 0}.hero-content{grid-template-columns:1fr;padding:115px 22px 90px;gap:30px}.hero-portrait{max-width:200px;justify-self:start}.hero-portrait img{aspect-ratio:1}.hero h1{font-size:clamp(44px,10vw,70px)}.nav-inner{min-height:60px}#menuToggle{display:block}#navLinks{display:none;position:absolute;top:60px;left:0;right:0;background:#171b1b;padding:12px 22px}#navLinks.open{display:grid;grid-template-columns:1fr 1fr}#navLinks a{font-size:12px;padding:12px}.about-grid,.top-grid{grid-template-columns:1fr}.impact .metrics{grid-template-columns:1fr 1fr}.timeline:before{left:6px}.tl-item,.tl-item:nth-child(even){width:100%;margin:0;padding:0 0 18px 28px}.tl-item:before,.tl-item:nth-child(even):before{left:0;right:auto}.manifesto{background-attachment:scroll}.card-grid{grid-template-columns:1fr}.hero-buttons .btn{flex:0 1 auto}.section-head{margin-bottom:28px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<header class="hero" id="home">
-<div class="hero-content">
-<div class="hero-inner">
-<div class="hero-eyebrow"><span class="dot"></span> Academic Portfolio</div>
-<h1>Dr. Muhammad <span class="accent">Asad Zaighum</span></h1>
-<div class="hero-role"><span>Mathematician</span><span>Researcher</span><span>Educator</span></div><p class="affiliation">Associate Professor · Heriot-Watt International Campus, Kazakhstan</p>
-<p class="typed-paragraph"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
-<p class="motto">“Stay Hungry and Stay Curious for Science.”</p><div class="hero-buttons">
-<a class="btn btn-gold" href="#publications">▣ View Publications</a>
-<a class="btn btn-outline" href="#contact">✉ Contact Me</a>
-</div>
-<div class="profile-links"><a href="https://scholar.google.com.pk/citations?user=3chi74IAAAAJ&amp;hl=en" rel="noopener" target="_blank">Google Scholar ↗</a><a href="https://orcid.org/0000-0003-2677-1957" rel="noopener" target="_blank">ORCID ↗</a><a href="https://www.scopus.com/authid/detail.uri?authorId=55507494500" rel="noopener" target="_blank">Scopus ↗</a><a href="https://www.webofscience.com/wos/author/record/I-8235-2012" rel="noopener" target="_blank">Web of Science ↗</a></div></div>
-</div>
-</header>
-<nav class="navbar">
-<div class="nav-inner"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#grants">Grants</a><a href="#experience">Career</a><a href="#supervision">Supervision</a><a href="#awards">Awards</a><a href="#talks">Talks</a><a href="#contact">Contact</a><button aria-label="Toggle color theme" id="themeToggle" type="button">☾</button></div>
-</nav>
-<!-- ============ SNAPSHOT ============ -->
-<section class="section metrics-shell"><div class="wrap"><div class="dashboard-metrics">
-<h3 class="panel-title"><span class="ico">▥</span> Research Metrics</h3>
-<div class="metrics">
-<div class="metric-card"><div class="number" data-metric="scopus-docs" id="scopus-docs">34</div><div class="label">Scopus Articles</div></div>
-<div class="metric-card"><div class="number" data-metric="wos-docs" id="wos-docs">31</div><div class="label">WoS Articles</div></div>
-<div class="metric-card"><div class="number" data-metric="scopus-h" id="scopus-h">11</div><div class="label">Scopus h-index</div></div>
-<div class="metric-card"><div class="number" data-metric="wos-h" id="wos-h">12</div><div class="label">WoS h-index</div></div>
-<div class="metric-card"><div class="number">7</div><div class="label">Ph.D. graduates</div></div><div class="metric-card"><div class="number">35</div><div class="label">M.Phil. graduates</div></div></div>
-<p class="metrics-updated">Last updated <span data-metric="updated" id="metrics-updated">manually</span></p>
-</div></div></section><section class="section" data-panel="research" id="research">
-<div class="wrap">
-<div class="top-grid">
+<nav class="navbar"><div class="nav-inner"><a class="brand" href="#home">MAZ<span>.</span></a><button aria-controls="navLinks" aria-expanded="false" id="menuToggle">Menu ☰</button><div id="navLinks"><a href="#about">About</a><a href="#research">Research</a><a href="#experience">Career</a><a href="#publications">Publications</a><a href="#supervision">Supervision</a><a href="#talks">Talks &amp; awards</a><a href="#contact">Contact</a></div></div><div id="progress"></div></nav><header class="hero" id="home"><canvas aria-hidden="true" id="mathCanvas"></canvas><div class="hero-content"><div class="hero-inner"><div class="hero-eyebrow">MATHEMATICS / RESEARCH / EDUCATION</div><p class="intro">Hello, I am</p><h1>Muhammad Asad<br/><span class="accent">Zaighum.</span></h1><div class="hero-role"><span id="roleText">Mathematician</span></div><p class="typed-paragraph">Associate Professor · Heriot-Watt International Campus<br/>K. Zhubanov Aktobe Regional University, Kazakhstan</p><div class="hero-buttons"><a class="btn btn-gold" href="#about">Discover my work ↓</a><a class="btn btn-outline" href="CV_M_A_Zaighum.pdf">Curriculum vitae ↗</a></div></div><figure class="hero-portrait"><img alt="Muhammad Asad Zaighum" onerror="this.parentElement.hidden=true" src="profile.jpg"/><figcaption>HARMONIC &amp; FUNCTIONAL ANALYSIS</figcaption></figure></div><a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a></header>
 
-<div>
-<h3 class="panel-title"><span class="ico">◉</span> Research Interests</h3>
-<div class="directions"><article><div class="formula">f̂(ξ) = ∫ f(x)e<sup>−2πixξ</sup> dx</div><h3>Harmonic Analysis</h3><p>Fourier analysis and classical operators</p></article><article><div class="formula">L<sup>p(·)</sup>, H, M</div><h3>Function Spaces</h3><p>Grand, Herz, Morrey and net spaces</p></article><article><div class="formula">Tf(x) = ∫ K(x,y)f(y) dy</div><h3>Integral Operators</h3><p>Boundedness of kernel operators</p></article><article><div class="formula">‖Tf‖<sub>q,w</sub> ≲ ‖f‖<sub>p,v</sub></div><h3>Weighted Inequalities</h3><p>Weighted estimates and complex interpolation</p></article></div>
-</div>
-<div class="network-box" id="coauthors">
-<h3 class="panel-title"><span class="ico">♙</span> Co-author Network</h3>
-<div class="network-map" id="netmap">
-<svg id="netsvg" viewbox="0 0 500 500"><g id="netlines" opacity=".7" stroke="#b9c7d6" stroke-width="1.2"></g></svg>
-<div class="ring"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<!-- ============ SNAPSHOT ============ -->
+
 <!-- ============ ABOUT ============ -->
-<section class="section alt" data-panel="experience" id="about">
+<section class="section alt" id="about">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Profile</span>
@@ -472,7 +431,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 <div class="rule"></div>
 </div>
 <div class="about-grid">
-<div class="about-card">
+<div class="about-card"><p class="chapter">01 / A little about me</p>
 <h2>A decade at the intersection of harmonic &amp; functional analysis</h2>
 <p>
           My research lies at the intersection of harmonic analysis and functional analysis,
@@ -486,7 +445,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 <span class="pill">Fourier Analysis</span>
 <span class="pill">Integral Operators</span>
 </div>
-</div>
+<p>My current teaching includes foundation-level mathematics (SCQF Level 7) and Foundation-I in Computer Engineering (SCQF Level 9).</p></div>
 <div>
 <div class="side-card">
 <h3>Academic Profiles</h3>
@@ -505,9 +464,41 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div>
 </div>
 </div>
+</section><section class="impact" id="impact"><div class="wrap"><p class="chapter">02 / Research in numbers</p><h2>Work that makes<br/>an impact.</h2><div class="impact-content"><div>
+
+<div class="metrics">
+<div class="metric-card"><div class="number" data-metric="scopus-docs" id="scopus-docs">34</div><div class="label">Scopus Articles</div></div>
+<div class="metric-card"><div class="number" data-metric="wos-docs" id="wos-docs">31</div><div class="label">WoS Articles</div></div>
+<div class="metric-card"><div class="number" data-metric="scopus-h" id="scopus-h">11</div><div class="label">Scopus h-index</div></div>
+<div class="metric-card"><div class="number" data-metric="wos-h" id="wos-h">12</div><div class="label">WoS h-index</div></div>
+<div class="metric-card"><div class="number">7</div><div class="label">Ph.D. completions</div></div><div class="metric-card"><div class="number">35</div><div class="label">M.Phil. completions</div></div></div>
+<p class="metrics-updated">Last updated <span data-metric="updated" id="metrics-updated">manually</span></p>
+</div></div></div></section><section class="section" id="research">
+<div class="wrap"><div class="section-head"><span class="kicker">03 / Areas of inquiry</span><h2>Questions that drive me.</h2><div class="rule"></div></div>
+<div class="top-grid">
+
+<div>
+<h3 class="panel-title"><span class="ico">◉</span> Research Interests</h3>
+<ul class="interests">
+<li><span class="check">✓</span> Non-Standard Function Spaces</li>
+<li><span class="check">✓</span> Harmonic Analysis</li>
+<li><span class="check">✓</span> Functional Analysis</li>
+<li><span class="check">✓</span> Weighted Normed Inequalities</li>
+<li><span class="check">✓</span> Complex Interpolation</li>
+</ul>
+</div>
+<div class="network-box" id="coauthors">
+<h3 class="panel-title"><span class="ico">♙</span> Co-author Network</h3>
+<div class="network-map" id="netmap">
+<svg id="netsvg" viewbox="0 0 500 500"><g id="netlines" opacity=".7" stroke="#b9c7d6" stroke-width="1.2"></g></svg>
+<div class="ring"></div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <!-- ============ EDUCATION ============ -->
-<section class="section" data-panel="experience" id="education">
+<section class="section" id="education">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Background</span>
@@ -533,7 +524,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div>
 </section>
 <!-- ============ EXPERIENCE ============ -->
-<section class="section alt" data-panel="experience" id="experience">
+<section class="section alt" id="experience">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Career</span>
@@ -569,7 +560,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div>
 </section>
 <!-- ============ RESEARCH GRANTS ============ -->
-<section class="section" data-panel="grants" id="grants">
+<section class="manifesto"><div class="wrap"><span class="chapter">A personal motto</span><blockquote>Stay hungry.<br/>Stay curious for science.</blockquote></div></section><section class="section" id="grants">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Research Projects</span>
@@ -596,7 +587,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div>
 </section>
 <!-- ============ PUBLICATIONS ============ -->
-<section class="section" data-panel="publications" id="publications">
+<section class="section" id="publications">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Scholarship</span>
@@ -604,7 +595,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 <div class="rule"></div>
 </div>
 <div class="pub-tools">
-<input class="pub-search" id="pubSearch" placeholder="🔍  Filter by title, journal, co-author or year…" type="text"/>
+<input aria-label="Search publications" class="pub-search" id="pubSearch" placeholder="🔍  Filter by title, journal, co-author or year…" type="text"/>
 <span class="pub-count" id="pubCount"></span>
 </div>
 <div class="pub-list" id="pubList">
@@ -641,12 +632,12 @@ footer .accent{color:var(--gold-light);font-weight:600}
 <div class="pub-card"><div class="pub-body">Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2013). <a href="https://doi.org/10.1007/s11117-013-0225-9" target="_blank">Positive kernel operators in L<sup>p(x)</sup> spaces</a>. <em>Positivity</em>, 17(4), 1123–1140.</div></div>
 <div class="pub-card"><div class="pub-body">Kokilashvili, V., Meskhi, A., &amp; Zaighum, M. A. (2013). <a href="https://doi.org/10.1186/1029-242X-2013-173" target="_blank">Weighted kernel operators in variable exponent amalgam spaces</a>. <em>Journal of Inequalities and Applications</em>, 2013, Article 173.</div></div>
 <div class="pub-card"><div class="pub-body">Meskhi, A., &amp; Zaighum, M. A. (2012). <a href="https://doi.org/10.1515/gmj-2012-0020" target="_blank">On the boundedness of product kernel operators with measures</a>. <em>Georgian Mathematical Journal</em>, 19(3), 533–557.</div></div>
-</div>
+</div><button aria-controls="pubList" class="btn more" id="morePubs" type="button">Show all publications ↓</button>
 <div class="pub-empty" id="pubEmpty" style="display:none">No publications match your filter.</div>
 </div>
 </section>
 <!-- ============ SUPERVISION ============ -->
-<section class="section alt" data-panel="supervision" id="supervision">
+<section class="section alt" id="supervision">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Graduate Research</span>
@@ -691,44 +682,9 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div>
 </section>
 <!-- ============ AWARDS ============ -->
-<section class="section" data-panel="awards" id="awards">
-<div class="wrap">
-<div class="section-head">
-<span class="kicker">Recognition</span>
-<h2>Honors &amp; Awards</h2>
-<div class="rule"></div>
-</div>
-<div class="card-grid">
-<div class="info-card">
-<span class="years">November 2013</span>
-<h3>Research Performance Prize</h3>
-<p>Abdus Salam School of Mathematical Sciences, GCU Lahore; outstanding Ph.D. research.</p>
-</div>
-<div class="info-card">
-<span class="years">March 2013</span>
-<h3>First Prize, Young Speaker</h3>
-<p>6th World Conference on 21st Century Mathematics, Abdus Salam School of Mathematical Sciences; exceptional presentation.</p>
-</div>
-<div class="info-card">
-<span class="years">November 2010</span>
-<h3>Award for Commendable Performance</h3>
-<p>Abdus Salam School of Mathematical Sciences, GCU Lahore; excellence in first-year Ph.D. coursework.</p>
-</div>
-<div class="info-card">
-<span class="years">2009</span>
-<h3>Chancellor’s Gold Medal</h3>
-<p>COMSATS Institute of Information Technology; academic excellence in BS Mathematics.</p>
-</div>
-<div class="info-card">
-<span class="years">2009</span>
-<h3>Institute’s Gold Medal</h3>
-<p>COMSATS Institute of Information Technology; outstanding academic performance in BS Mathematics.</p>
-</div>
-</div>
-</div>
-</section>
+
 <!-- ============ TALKS ============ -->
-<section class="section" data-panel="talks" id="talks">
+<section class="section" id="talks">
 <div class="wrap">
 <div class="section-head">
 <span class="kicker">Academic Engagement</span>
@@ -798,9 +754,44 @@ footer .accent{color:var(--gold-light);font-weight:600}
 </div></div>
 </div>
 </div>
+</section><section class="section" id="awards">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker">Recognition</span>
+<h2>Honors &amp; Awards</h2>
+<div class="rule"></div>
+</div>
+<div class="card-grid">
+<div class="info-card">
+<span class="years">November 2013</span>
+<h3>Research Performance Prize</h3>
+<p>Abdus Salam School of Mathematical Sciences, GCU Lahore; outstanding Ph.D. research.</p>
+</div>
+<div class="info-card">
+<span class="years">March 2013</span>
+<h3>First Prize, Young Speaker</h3>
+<p>6th World Conference on 21st Century Mathematics, Abdus Salam School of Mathematical Sciences; exceptional presentation.</p>
+</div>
+<div class="info-card">
+<span class="years">November 2010</span>
+<h3>Award for Commendable Performance</h3>
+<p>Abdus Salam School of Mathematical Sciences, GCU Lahore; excellence in first-year Ph.D. coursework.</p>
+</div>
+<div class="info-card">
+<span class="years">2009</span>
+<h3>Chancellor’s Gold Medal</h3>
+<p>COMSATS Institute of Information Technology; academic excellence in BS Mathematics.</p>
+</div>
+<div class="info-card">
+<span class="years">2009</span>
+<h3>Institute’s Gold Medal</h3>
+<p>COMSATS Institute of Information Technology; outstanding academic performance in BS Mathematics.</p>
+</div>
+</div>
+</div>
 </section>
 <!-- ============ CONTACT ============ -->
-<section class="section alt" data-panel="contact" id="contact">
+<section class="section alt" id="contact">
 <div class="wrap">
 <div class="contact-card">
 <h2>Get in Touch</h2>
@@ -816,28 +807,7 @@ footer .accent{color:var(--gold-light);font-weight:600}
 <footer>
   © 2026 <span class="accent">Dr. Muhammad Asad Zaighum</span> · Academic Portfolio
 </footer>
-<script>
-/* ---- Hero typed statement ---- */
-(function(){
-  const el = document.getElementById("typed-text");
-  if(!el) return;
-  const text = "I work in harmonic analysis and functional analysis, with special interest in non-standard function spaces, weighted normed inequalities and aggrandized function spaces.";
-  let i = 0, deleting = false;
-  function loop(){
-    if(!deleting){
-      el.textContent = text.slice(0, ++i);
-      if(i === text.length){ deleting = true; return setTimeout(loop, 2600); }
-      setTimeout(loop, 32 + Math.random()*18);
-    } else {
-      el.textContent = text.slice(0, --i);
-      if(i === 0){ deleting = false; return setTimeout(loop, 700); }
-      setTimeout(loop, 16);
-    }
-  }
-  setTimeout(loop, 700);
-})();
-
-/* ---- Co-author network (data-driven, self-positioning) ---- */
+<script>/* ---- Co-author network (data-driven, self-positioning) ---- */
 (function(){
   const map = document.getElementById("netmap");
   const linesG = document.getElementById("netlines");
@@ -890,47 +860,15 @@ footer .accent{color:var(--gold-light);font-weight:600}
   }
 })();
 
-/* ---- Publication numbering + live filter ---- */
-(function(){
-  const list = document.getElementById("pubList");
-  const cards = Array.from(list.querySelectorAll(".pub-card"));
-  const search = document.getElementById("pubSearch");
-  const count = document.getElementById("pubCount");
-  const empty = document.getElementById("pubEmpty");
-  const total = cards.length;
 
-  cards.forEach((card, i)=>{
-    const num = document.createElement("span");
-    num.className = "pub-number";
-    num.textContent = `J.${total - i}`;
-    card.prepend(num);
-    card.dataset.text = card.textContent.toLowerCase();
-  });
-
-  function update(){
-    const q = search.value.trim().toLowerCase();
-    let shown = 0;
-    cards.forEach(c=>{
-      const match = !q || c.dataset.text.includes(q);
-      c.style.display = match ? "" : "none";
-      if(match) shown++;
-    });
-    empty.style.display = shown ? "none" : "block";
-    count.textContent = q ? `${shown} of ${total} shown` : `${total} publications`;
-  }
-  search.addEventListener("input", update);
-  update();
-})();
-
-
-(function(){
- const tabs=[...document.querySelectorAll('.nav-inner a')];
- const panels=[...document.querySelectorAll('[data-panel]')];
- function activate(){const hash=location.hash.slice(1); const target=document.getElementById(hash); const key=target?.dataset.panel || (hash==='coauthors'?'research':hash==='about'||hash==='education'?'experience':hash); const selected=tabs.some(a=>a.hash==='#'+key)?key:'research'; panels.forEach(p=>p.hidden=p.dataset.panel!==selected); tabs.forEach(a=>{const active=a.hash==='#'+selected;a.classList.toggle('active',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});}
- window.addEventListener('hashchange',activate);activate();
- const toggle=document.getElementById('themeToggle');function theme(dark){document.documentElement.classList.toggle('dark',dark);toggle.textContent=dark?'☀':'☾';toggle.setAttribute('aria-pressed',String(dark));try{localStorage.setItem('portfolio-theme',dark?'dark':'light')}catch(e){}}
- let saved;try{saved=localStorage.getItem('portfolio-theme')}catch(e){} theme(saved==='dark');toggle.addEventListener('click',()=>theme(!document.documentElement.classList.contains('dark')));
-})();
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const roles=['Mathematician','Researcher','Educator']; let ri=0,ci=roles[0].length,back=true; const role=document.getElementById('roleText');
+function typeRole(){const word=roles[ri]; if(back){ci--;role.textContent=word.slice(0,ci);if(ci<=0){ri=(ri+1)%roles.length;back=false;setTimeout(typeRole,240);return;}}else{ci++;role.textContent=word.slice(0,ci);if(ci>=word.length){back=true;setTimeout(typeRole,1800);return;}}setTimeout(typeRole,back?45:95)}if(!reduced)setTimeout(typeRole,1800);
+const menu=document.getElementById('menuToggle'), links=document.getElementById('navLinks');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+function scrollUpdate(){const max=document.documentElement.scrollHeight-innerHeight;document.getElementById('progress').style.width=(max>0?100*scrollY/max:0)+'%'}addEventListener('scroll',scrollUpdate,{passive:true});scrollUpdate();
+if(!reduced&&'IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.section-head,.about-card,.side-card,.info-card,.tl-item,.impact h2,.manifesto blockquote,.network-box').forEach(el=>{el.classList.add('reveal');observer.observe(el)});const counts=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;counts.unobserve(e.target);const el=e.target,n=Number(el.textContent);if(!Number.isFinite(n))return;const t=performance.now();function tick(now){const p=Math.min(1,(now-t)/1100);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)}requestAnimationFrame(tick)}));document.querySelectorAll('.impact .number').forEach(el=>counts.observe(el));}
+const cards=[...document.querySelectorAll('#pubList .pub-card')],search=document.getElementById('pubSearch'),more=document.getElementById('morePubs');let expanded=false;cards.forEach((c,i)=>{const span=document.createElement('span');span.className='pub-number';span.textContent='J.'+(cards.length-i);c.prepend(span);c.dataset.text=c.textContent.toLowerCase()});function filter(){const q=search.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const hit=c.dataset.text.includes(q);if(hit)n++;c.style.display=hit&&(q||expanded||n<=6)?'':'none'});document.getElementById('pubCount').textContent=q?n+' of '+cards.length+' publications':cards.length+' publications';document.getElementById('pubEmpty').style.display=n?'none':'block';more.hidden=!!q||cards.length<=6;more.textContent=expanded?'Show fewer publications ↑':'Show all '+cards.length+' publications ↓'}search.addEventListener('input',filter);more.addEventListener('click',()=>{expanded=!expanded;filter();if(!expanded)document.getElementById('publications').scrollIntoView()});filter();
+const canvas=document.getElementById('mathCanvas'),ctx=canvas.getContext('2d');let cw=0,ch=0,heroVisible=true;function resize(){const rect=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);cw=rect.width;ch=rect.height;canvas.width=cw*dpr;canvas.height=ch*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);if(reduced)draw(0)}function draw(time){ctx.clearRect(0,0,cw,ch);for(let k=0;k<19;k++){ctx.beginPath();for(let x=0;x<=cw;x+=9){const y=ch*(.45+k*.024)+Math.sin(x*.008+k*.24+time*.00035)*ch*.11+Math.cos(x*.003-time*.00025+k*.17)*ch*.12;x===0?ctx.moveTo(x,y):ctx.lineTo(x,y)}ctx.strokeStyle=k%5===0?'rgba(231,144,116,.48)':'rgba(156,195,167,.23)';ctx.lineWidth=.9;ctx.stroke()}}resize();addEventListener('resize',resize);if(!reduced){if('IntersectionObserver'in window)new IntersectionObserver(e=>{heroVisible=e[0].isIntersecting}).observe(canvas);function animate(t){if(heroVisible&&!document.hidden)draw(t);requestAnimationFrame(animate)}requestAnimationFrame(animate)}
 </script>
 </body>
 </html>
